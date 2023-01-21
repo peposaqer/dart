@@ -1,0 +1,37 @@
+@import "./components/buttons";
+@import "./components/slider";
+@import "./components/carousel";
+@import "./layout/footer";
+@import "./layout/navigation";
+@import "./pages/about";
+@import "./pages/home";
+
+
+$myColor: #F7F2D9;
+
+h1 {
+  color: $myColor;
+  font-size: 18px;
+}
+
+body {
+  background-color: rgb(27, 27, 27);
+  &::-webkit-scrollbar {
+    width: 3px;
+    background-color: transparent;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    border-radius: 0px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #CA3B4C; 
+    border-radius: 0px;
+    width: 3px;
+  }
+}
+
+
