@@ -9,6 +9,7 @@ $mainSize: 18px;
 .footer {
     background-color: $mainColor;
     padding: 3rem 0 0 0;
+    border-radius:  65px 65px 0px 0px;
     img {
         width: 200px;
         height: 80px;
@@ -40,6 +41,7 @@ $mainSize: 18px;
     }
     .tt {
         border-right: .6px solid #8C8E90;
+        padding-right: 1.5rem;
     }
     .copyRight {
         border-top: .6px solid #8C8E90;
@@ -74,4 +76,27 @@ $mainSize: 18px;
             }
         }
     }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        border-radius: 0px;
+        img {
+            width: 120px !important;
+            height: 80px;
+        }
+        .copyRight {
+            border-top: none;
+            display: block;
+            text-align: center;
+            p {
+                margin-bottom: 1rem;
+            }
+        }
+        .social {
+            margin-top: 3rem;
+            justify-content: center;
+        }
+    }
+    
 }

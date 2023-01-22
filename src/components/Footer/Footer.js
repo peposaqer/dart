@@ -8,11 +8,11 @@ function Footer() {
   const { t } = useTranslation();
 
   return (
-    <div className="footer">
+    <div className="footer en">
         <div className="container">
             <div className="row">
                 <div className="col-md-6">
-                    <div className="pe-5 tt">
+                    <div className="tt">
                         <img alt="" src={Logo}/>
                         <p>{t("footer_des_1")}</p>
                         <p>{t("footer_des_2")}</p>

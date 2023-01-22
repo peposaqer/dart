@@ -90,6 +90,9 @@ $tagsColor: #C69749;
 }
 
 @media screen and (max-width: 768px) {
+    .header-home2 {
+        border-radius: 0px !important;
+    }
     .logo-dark {
         width: 120px !important;
         height: 80px;
