@@ -3,8 +3,6 @@ $mainColor: #282A3A;
 $headerColor: #735F32;
 $tagsColor: #C69749;
 
-
-
 .navbar {
     background-color: transparent;
     // box-shadow: 0px 0px 19px $myColor;
@@ -19,11 +17,18 @@ $tagsColor: #C69749;
         white-space: nowrap;
         font-weight: bold;
         transition: all .3s;
-        &:hover {
-            border-bottom: 2px solid $tagsColor;
+        display:inline-block;
+        &:after {
+            border-bottom: 3px solid $tagsColor;
             transition: all .3s;
+            display:block;
+            content: '';
+            transform: scaleX(0);  
+            transition: transform 250ms ease-in-out;
         }
-        
+        &:hover:after {
+            transform: scaleX(1);
+        }
     }
 }
 .fa-circle-info {

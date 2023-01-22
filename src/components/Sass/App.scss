@@ -1,10 +1,12 @@
 @import "./components/buttons";
 @import "./components/slider";
 @import "./components/carousel";
+@import "./components/progress";
 @import "./layout/footer";
 @import "./layout/navigation";
 @import "./pages/about";
 @import "./pages/home";
+@import "./lang/lang.scss";
 
 
 $bgColor: #000000;
@@ -12,13 +14,9 @@ $mainColor: #282A3A;
 $headerColor: #735F32;
 $tagsColor: #C69749;
 
-h1 {
-  color: $headerColor;
-  font-size: 48px;
-}
-
 body {
   background-color: $bgColor;
+  overflow-x: hidden;
   &::-webkit-scrollbar {
     width: 3px;
     background-color: transparent;

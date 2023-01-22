@@ -1,21 +1,34 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper";
 import { useTranslation } from "react-i18next";
-import i18n from "i18next";
+import Slide from "./Slide";
 import "../translations/i18n";
 import bg7 from "../img/57357.jpg";
 import bg8 from "../img/covertina.jpg";
 import bg9 from "../img/jaf.jpg";
+import view from "../img/designers-working-on-a-project.jpg";
+import aboutimg1 from "../img/sei-49T0rSuc2Gg-unsplash.jpg";
+import aboutimg2 from "../img/rumman-amin-3DZplIxvyh4-unsplash.jpg";
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+import CountUp from 'react-countup';
+import Countter from "../Data/countter"
+import i18n from "i18next";
+import "../translations/i18n";
+import News from "../Data/news";
 
 function Home() {
   const { t } = useTranslation();
+  const List = News.filter((d) => d.selected === false);
+  const List2 = News.filter((d) => d.selected === true);
 
   return (
-    <>
-      <section className="wrapper bg-dark">
+    <div className="home">
+      <div className="">
         <div
           className="swiper-container swiper-hero dots-over"
           data-margin="0"
@@ -27,7 +40,6 @@ function Home() {
         >
           <>
             <Swiper
-              spaceBetween={30}
               slidesPerView={1}
               pagination={true}
               navigation={true}
@@ -68,18 +80,200 @@ function Home() {
             </Swiper>
           </>
         </div>
-      </section>
+      </div>
       <div>
         <div className="container">
-          <div className="home">
-            <h1>Home</h1>
-            <p>
-              Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.Gymme is fitness platform built for gym owners and gym members. we have a vision and a destination to take the fitness industry to another level and make it easier for businesses and individuals. we are helping gym owners to manage, control, deduct and reduce the expenses and increase revenue streams of their gyms. we are helping athletes to keep fit, healthy by make it easier for them to join gym or any sport activity.
-            </p>
+          <div className="about en">
+            <div className="row">
+              <div className="col-md-6">
+                <div className="company">
+                  <span className="about_company">{t("about_company")}</span>
+                  <h1 className="about_header">{t("about_header")}</h1>
+                  <p className="about_description">{t("about_description")}</p>
+                  <div className="about-img">
+                    <img src={aboutimg1} alt="" />
+                    <div className="red"><span>3+ <br/><strong className="about_Experience">{t("about_Experience")}</strong></span></div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="team">
+                  <div className="about-img">
+                    <img src={aboutimg2} alt="" />
+                  </div>
+                  <div className="trust">
+                    <div>
+                      <h1 className="Team"><i className="fa fa-seal-exclamation"></i>{t("Team")}</h1>
+                      <p className="team_description">{t("team_description")}</p>
+                    </div>
+                    <div>
+                      <h1 className="Company"><i className="fa fa-users-medical"></i>{t("Company")}</h1>
+                      <p className="Company_description">{t("Company_description")}</p>
+                    </div>
+                  </div>
+                  <div className="about-link">
+                    <Link className="more LEAREN_MORE" to="/about">{t("LEAREN_MORE")}</Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="we en">
+            <div className="row">
+              <div className="col-md-6">
+                <div className="tec">
+                  <div>
+                    <CircularProgressbar value={88} text={"88%"} />
+                    <h5>{t("Advertising")}</h5>
+                  </div>
+                  <div>
+                    <CircularProgressbar value={96} text={"96%"} />
+                    <h5>{t("Design")}</h5>
+                  </div>
+                  <div>
+                    <CircularProgressbar value={92} text={"92%"} />
+                    <h5>{t("Technology")}</h5>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div>
+                  <span>{t("DO")}</span>
+                  <h1>{t("Make")}</h1>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </>
+      <div className="services en">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 text-center">
+              <span className="SERVICES">{t("SERVICES")}</span>
+              <h1 className="Best_Services">{t("Best_Services")}</h1>
+              <p className="Services_description">{t("Services_description")}</p>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="best">
+                <i className="fa-solid fa-lightbulb"></i>
+                <h1 className="Business">{t("Business")}</h1>
+                <p className="Business_description">{t("Business_description")}</p>
+                <Link to="/Services" className="LEAREN_MORE">{t("LEAREN_MORE")}</Link>
+              </div>
+              <div className="best">
+                <i className="fa-solid fa-chalkboard-user"></i>
+                <h1 className="Branding">{t("Branding")}</h1>
+                <p className="Branding_description">{t("Branding_description")}</p>
+                <Link to="/Services" className="LEAREN_MORE">{t("LEAREN_MORE")}</Link>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 top">
+              <div className="best">
+                <i className="fa-solid fa-bars-progress"></i>
+                <h1 className="Strategy">{t("Strategy")}</h1>
+                <p className="Strategy_description">{t("Strategy_description")}</p>
+                <Link to="Services" className="LEAREN_MORE">{t("LEAREN_MORE")}</Link>
+              </div>
+              <div className="best view">
+                <img src={view} alt="" />
+                <div>
+                  <p className="Know">{t("Know")}</p>
+                  <Link to="Services" className="VIEW_MORE">{t("VIEW_MORE")}</Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="best">
+                <i className="fa-solid fa-chalkboard-user"></i>
+                <h1 className="Planning">{t("Planning")}</h1>
+                <p className="Planning_description">{t("Planning_description")}</p>
+                <Link to="Services" className="LEAREN_MORE">{t("LEAREN_MORE")}</Link>
+              </div>
+              <div className="best">
+                <i className="fa-solid fa-bars-progress"></i>
+                <h1 className="Risk">{t("Risk")}</h1>
+                <p className="Risk_description">{t("Risk_description")}</p>
+                <Link to="Services" className="LEAREN_MORE">{t("LEAREN_MORE")}</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="testimonial">
+        <div className="container">
+          <div className="our">
+            <div>
+              <span className="TESTIMONIAL">{t("TESTIMONIAL")}</span>
+              <h1 className="Said">{t("Said")}</h1>
+            </div>
+            <Slide /> 
+          </div>
+          <div className="test"></div>
+          <div className="count en">
+            <div className="row">
+              {Countter.map((x, index) => (
+                <div className="col-md-3" key={index}>
+                  <h1>{i18n.language === "en"
+                            ? x.name
+                            : x.name_ar}</h1>
+                  <CountUp start={0} end={x.end} delay={3} duration={4}>
+                    {({ countUpRef }) => (
+                      <div>
+                        <span ref={countUpRef} />
+                      </div>
+                    )}
+                  </CountUp>
+                    <h6>{i18n.language === "en"
+                            ? x.span
+                            : x.span_ar}</h6>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="request">
+        <div>
+          <span className="">{t("REQUEST")}</span>
+          <h1>{t("REQUEST_header")}</h1>
+          <p>{t("REQUEST_description")}</p>
+          <Link className="VIEW_MORE" to="#!">{t("REQUEST_link")}</Link>
+        </div>
+      </div>
+      <div className="blog">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-4">
+              <div className="time">
+                <span>{t("NEWS_BLOG")}</span>
+                <h1>{t("News")}</h1>
+              </div>
+              {List.map((x, index) => (
+                  <div className="step" key={index}>
+                    <Link to={x.link}>{x.step}</Link>
+                    <span><i class="fa-solid fa-clock"></i>{x.time}</span>
+                  </div>
+                ))}
+            </div>
+            {List2.map((x, index) => (
+                <div className="col-md-4" key={index}>
+                  <div className="step">
+                    <Link to="#!" className="new" style={{ backgroundImage: `url(${x.src})` }}>
+                      <strong>{x.span}</strong>
+                    </Link>
+                    <Link to={x.link}>{x.step}</Link>
+                    <span><i class="fa-solid fa-clock"></i>{x.time}</span>
+                    <p>{i18n.language === "en"
+                            ? x.description
+                            : x.description_ar}</p>
+                  </div>
+                </div>
+              ))}
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 

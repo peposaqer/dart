@@ -1,0 +1,50 @@
+$bgColor: #000000;
+$mainColor: #282A3A;
+$headerColor: #735F32;
+$tagsColor: #C69749;
+
+
+.more {
+    text-decoration: none;
+    color: $tagsColor;
+    font-size: 18px;
+    letter-spacing: 5px;
+    border: 1px solid $tagsColor;
+    padding: 1rem 2.5rem;
+    margin-top: 2rem;
+    transition: all .3s;
+    &:hover {
+        color: #FFF;
+        background-color: $tagsColor;
+        transition: all .3s;
+    }
+}
+
+.VIEW_MORE {
+    text-decoration: none !important;
+    font-weight: bold;
+    color: #FFF!important;
+    font-size: 18px;
+    letter-spacing: 5px;
+    border: 1px solid #FFF;
+    padding: 1rem 2.5rem;
+    margin-top: 2rem;
+    transition: all .3s;
+    &:hover {
+        color: #FFF;
+        background-color: $tagsColor;
+        transition: all .3s;
+    }
+}
+
+.Now {    
+    text-decoration: none !important;
+    font-weight: bold;
+    color: #FFF!important;
+    font-size: 18px;
+    letter-spacing: 5px;
+    border: 1px solid $tagsColor;
+    padding: .8rem 1.5rem;
+    border-radius: 36px;
+    background-color: $tagsColor;
+}

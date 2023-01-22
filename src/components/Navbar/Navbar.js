@@ -94,7 +94,7 @@ function Nav_1(props) {
               <div className="offcanvas-body d-flex flex-column h-100 e">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <Link to="/" className="nav-link">
+                    <Link to="/" className="nav-link fromRight">
                       {t("home")}
                     </Link>
                   </li>

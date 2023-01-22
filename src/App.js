@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { useState, useEffect } from "react";
 import "./components/translations/i18n";
 import i18n from "i18next";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [lang, setLang] = useState("");
@@ -59,7 +60,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        <Navbar changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}/>
         <Routes>
           <Route
             path="/"
@@ -74,6 +75,7 @@ function App() {
             changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}
           />
         </Routes>
+        <Footer changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}/>
       </BrowserRouter>
     </>
   );
