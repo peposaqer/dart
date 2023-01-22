@@ -7,15 +7,18 @@
 @import "./pages/home";
 
 
-$myColor: #F7F2D9;
+$bgColor: #000000;
+$mainColor: #282A3A;
+$headerColor: #735F32;
+$tagsColor: #C69749;
 
 h1 {
-  color: $myColor;
-  font-size: 18px;
+  color: $headerColor;
+  font-size: 48px;
 }
 
 body {
-  background-color: rgb(27, 27, 27);
+  background-color: $bgColor;
   &::-webkit-scrollbar {
     width: 3px;
     background-color: transparent;
@@ -28,7 +31,7 @@ body {
 
   /* Handle */
   &::-webkit-scrollbar-thumb {
-    background: #CA3B4C; 
+    background: $tagsColor; 
     border-radius: 0px;
     width: 3px;
   }

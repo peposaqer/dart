@@ -1,19 +1,35 @@
-$myColor: #F7F2D9;
+$bgColor: #000000;
+$mainColor: #282A3A;
+$headerColor: #735F32;
+$tagsColor: #C69749;
 
 
 
 .navbar {
-    background-color: $myColor;
-    box-shadow: 0px 0px 19px $myColor;
+    background-color: transparent;
+    // box-shadow: 0px 0px 19px $myColor;
     .logo-dark {
         width: 200px;
         height: 80px;
     }
     .nav-link {
-        color: #000 !important;
+        color: $tagsColor !important;
         font-size: 18px;
-        padding: 0rem 1rem !important;
+        margin: 0rem 1rem !important;
         white-space: nowrap;
+        font-weight: bold;
+        transition: all .3s;
+        &:hover {
+            border-bottom: 2px solid $tagsColor;
+            transition: all .3s;
+        }
+        
+    }
+}
+.fa-circle-info {
+    border-bottom: none !important;
+    &:hover {
+        border-bottom: 2px solid transparent !important;
     }
 }
 
@@ -29,6 +45,7 @@ $myColor: #F7F2D9;
     border: none;
     outline: none;
     box-shadow: none;
+    color: #FFF !important;
 }
 
 .hamburger {
@@ -36,14 +53,16 @@ $myColor: #F7F2D9;
     border: none;
     outline: none;
     box-shadow: none;
+    color: #FFF !important;
     margin-left: 1rem;
 }
 
 
 .header-home {
-    position: relative !important;
+    position: absolute !important;
+    z-index: 10;
     width: 100%;
-    height: 90px;
+    // height: 90px;
     transition: all .3s !important;
 }
 
@@ -54,7 +73,15 @@ $myColor: #F7F2D9;
     width: 100% !important;
     transition: all .3s !important;
     z-index: 20202020 !important;
-    height: 90px !important;
+    // height: 90px !important;
+    background-color: $mainColor;
+    padding: 1rem 0;
+    border-radius: 0px 0 65px 65px;
+}
+
+.offcanvas-header .btn-close i {
+    color: #000000 !important;
+    background-color: #000000;
 }
 
 @media screen and (max-width: 768px) {

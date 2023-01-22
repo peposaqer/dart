@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import Logo from "../img/default-monochrome-black2.svg";
+import Logo from "../img/default-monochrome-white2.svg";
 import LogoLight from "../img/cover1.png";
 import { useTranslation } from "react-i18next";
 import "../translations/i18n";
@@ -77,7 +77,7 @@ function Nav_1(props) {
                   className="logo-dark"
                   src={Logo}
                   srcSet="./assets/img/logo@2x.png 2x"
-                  alt=""
+                  alt="00"
                 />
               </Link>
             </div>
@@ -89,12 +89,7 @@ function Nav_1(props) {
             >
               <div className="offcanvas-header d-lg-none">
                 <h3 className="text-white fs-30 mb-0">Gymme</h3>
-                <button
-                  type="button"
-                  className="btn-close btn-close-white"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
+                <i className="fa-solid fa-times close" data-bs-dismiss="offcanvas" aria-label="Close"></i>
               </div>
               <div className="offcanvas-body d-flex flex-column h-100 e">
                 <ul className="navbar-nav">
@@ -139,28 +134,28 @@ function Nav_1(props) {
                         to="https://www.twitter.com/gymmeclub"
                         rel="noreferrer"
                       >
-                        <i className="uil uil-twitter"></i>
+                        <i className="fab fa-twitter"></i>
                       </Link>
                       <Link
                         target="_blank"
                         to="https://www.facebook.com/gymmeclub"
                         rel="noreferrer"
                       >
-                        <i className="uil uil-facebook-f"></i>
+                        <i className="fab fa-facebook-f"></i>
                       </Link>
                       <Link
                         target="_blank"
                         to="https://www.linkedin.com/company/gymmeclub"
                         rel="noreferrer"
                       >
-                        <i className="uil uil-linkedin"></i>
+                        <i className="fab fa-linkedin"></i>
                       </Link>
                       <Link
                         target="_blank"
                         to="https://www.instagram.com/gymmeclub"
                         rel="noreferrer"
                       >
-                        <i className="uil uil-instagram"></i>
+                        <i className="fab fa-instagram"></i>
                       </Link>
                     </nav>
                   </div>
@@ -226,12 +221,7 @@ function Nav_1(props) {
                 alt=""
               />
             </Link>
-            <button
-              type="button"
-              className="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
+              <i className="fa-solid fa-times close" data-bs-dismiss="offcanvas" aria-label="Close"></i>
           </div>
           <div className="offcanvas-body pb-6">
             <div className="widget mb-8">
