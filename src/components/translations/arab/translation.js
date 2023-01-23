@@ -7,6 +7,8 @@ export const TRANSLATIONS_ar = {
   about_nav: "عنا",
   terms: "شروط الاستخدام",
   Privacy: "سياسة خاصة",
+  Services: "خدمات",
+  NEWS_nav: "الأخبار والمدونة",
   lang: "EN",
   about_company: "عن الشركة",
   about_header: "احصل على لوحات إعلانية جميلة لعملك",

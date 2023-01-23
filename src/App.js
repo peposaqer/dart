@@ -8,6 +8,13 @@ import { useState, useEffect } from "react";
 import "./components/translations/i18n";
 import i18n from "i18next";
 import Footer from "./components/Footer/Footer";
+import Services from "./components/Pages/Services";
+import News from "./components/Pages/News";
+import Careers from "./components/Pages/Careers";
+import Contact from "./components/Pages/Contact";
+import Privacy from "./components/Pages/Privacy";
+import Terms from "./components/Pages/Terms";
+import FAQ from "./components/Pages/FAQ";
 
 function App() {
   const [lang, setLang] = useState("");
@@ -67,11 +74,52 @@ function App() {
             element={<Home />}
             changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}
           />
-          
           <Route
             path="/About"
             exact
             element={<About />}
+            changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}
+          />
+          <Route
+            path="/Services"
+            exact
+            element={<Services />}
+            changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}
+          />
+          <Route
+            path="/News"
+            exact
+            element={<News />}
+            changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}
+          />
+          <Route
+            path="/Careers"
+            exact
+            element={<Careers />}
+            changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}
+          />
+          <Route
+            path="/Contact"
+            exact
+            element={<Contact />}
+            changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}
+          />
+          <Route
+            path="/Privacy"
+            exact
+            element={<Privacy />}
+            changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}
+          />
+          <Route
+            path="/Terms"
+            exact
+            element={<Terms />}
+            changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}
+          />
+          <Route
+            path="/FAQ"
+            exact
+            element={<FAQ />}
             changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}
           />
         </Routes>

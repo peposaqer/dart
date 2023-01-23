@@ -104,18 +104,23 @@ function Nav_1(props) {
                     </Link>
                   </li>
                   <li className="nav-item ">
-                    <Link to="/Mobile" className="nav-link">
-                      {t("Mobile")}
+                    <Link to="/Services" className="nav-link">
+                      {t("Services")}
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/Contact" className="nav-link">
-                      {t("contact")}
+                    <Link to="/News" className="nav-link">
+                      {t("NEWS_nav")}
                     </Link>
                   </li>
                   <li className="nav-item">
                     <Link to="/Careers" className="nav-link">
                       {t("Careers")}
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/Contact" className="nav-link">
+                      {t("contact")}
                     </Link>
                   </li>
                 </ul>

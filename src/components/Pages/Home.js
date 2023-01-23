@@ -285,7 +285,7 @@ function Home() {
               {List.map((x, index) => (
                   <div className="step" key={index}>
                     <Link to={x.link}>{x.step}</Link>
-                    <span><i class="fa-solid fa-clock"></i>{x.time}</span>
+                    <span><i className="fa-solid fa-clock"></i>{x.time}</span>
                   </div>
                 ))}
             </div>
@@ -296,7 +296,7 @@ function Home() {
                       <strong>{x.span}</strong>
                     </Link>
                     <Link to={x.link}>{x.step}</Link>
-                    <span><i class="fa-solid fa-clock"></i>{x.time}</span>
+                    <span><i className="fa-solid fa-clock"></i>{x.time}</span>
                     <p>{i18n.language === "en"
                             ? x.description
                             : x.description_ar}</p>
