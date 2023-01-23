@@ -71,7 +71,7 @@ function Nav_1(props) {
           className={`${header} navbar navbar-expand-lg center-nav transparent navbar-dark caret-none en`}
         >
           <div className="container flex-lg-row flex-nowrap align-items-center en">
-            <div className="navbar-brand w-100">
+            <div className="navbar-brand">
               <Link to="/">
                 <img
                   className="logo-dark"
@@ -106,6 +106,11 @@ function Nav_1(props) {
                   <li className="nav-item ">
                     <Link to="/Services" className="nav-link">
                       {t("Services")}
+                    </Link>
+                  </li>
+                  <li className="nav-item ">
+                    <Link to="/projects" className="nav-link">
+                      {t("projects")}
                     </Link>
                   </li>
                   <li className="nav-item">
@@ -167,7 +172,7 @@ function Nav_1(props) {
                 </div>
               </div>
             </div>
-            <div className="navbar-other w-100 d-flex justify-content-end en">
+            <div className="navbar-other d-flex justify-content-end en">
               <ul className="navbar-nav flex-row align-items-center justify-content-end">
                 <li className="nav-item">
                   <Link

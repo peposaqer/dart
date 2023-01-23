@@ -22,11 +22,15 @@ import "../translations/i18n";
 import News from "../Data/news";
 import client from "../Data/client";
 import VisibilitySensor from 'react-visibility-sensor';
+import Projects from "../Data/projects";
+import Team from "../Data/Team";
+import question from "../Data/question"
 
 function Home() {
   const { t } = useTranslation();
   const List = News.filter((d) => d.selected === false);
   const List2 = News.filter((d) => d.selected === true);
+  const project = Projects.filter((d) => d.selected === true);
 
   return (
     <div className="home">
@@ -248,7 +252,7 @@ function Home() {
                   <h1>{i18n.language === "en"
                             ? x.name
                             : x.name_ar}</h1>
-                  <CountUp start={0} end={x.end} delay={3} duration={4}>
+                  <CountUp start={0} end={x.end} delay={.3} duration={4}>
                     {({ countUpRef, start }) => (
                       <VisibilitySensor onChange={start}>
                         <div>
@@ -266,6 +270,32 @@ function Home() {
           </div>
         </div>
       </div>
+      <div className="projects">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <span>{t("projects")}</span>
+              <h1>{t("Featured_projects")}</h1>
+              <p>{t("projects_des")}</p>
+            </div>
+            {project.map((x, index) => (
+                <div className="col-lg-4 col-md-6" key={index}>
+                  <Link to="#!">
+                    <div className="pro" style={{ backgroundImage: `url(${x.src})` }}>
+                      <div>
+                        <h1>{x.step}</h1>
+                        <span>{x.name}</span>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              ))}
+              <div className="col-md-12 mt-5">
+                <Link to="/projects" className="VIEW_MORE">{t("VIEW_MORE")}</Link>
+              </div>
+          </div>
+        </div>
+      </div>
       <div className="request">
         <div>
           <span className="">{t("REQUEST")}</span>
@@ -274,7 +304,7 @@ function Home() {
           <Link className="VIEW_MORE" to="#!">{t("REQUEST_link")}</Link>
         </div>
       </div>
-      <div className="blog">
+      <div className="blog en">
         <div className="container">
           <div className="row">
             <div className="col-md-4">
@@ -303,6 +333,82 @@ function Home() {
                   </div>
                 </div>
               ))}
+          </div>
+        </div>
+      </div>
+      <div className="team">
+        <div className="container">
+          <div className="row">
+              <div className="col-md-12">
+                <span>{t("Team")}</span>
+                <h1>{t("Team_header")}</h1>
+                <p>{t("Team_des")}</p>
+              </div>
+              {Team.map((x, index) => (
+                <div className="col-md-4" key={index}>
+                  <div className="team-div" style={{ backgroundImage: `url(${x.src})` }}>
+                    <div className="media">
+                      <a href={x.facebook} target="_blank" >
+                        <i className="fab fa-facebook-f"></i>
+                      </a>
+                      <a href={x.inst} target="_blank" >
+                        <i className="fab fa-instagram"></i>
+                      </a>
+                      <a href={x.link} target="_blank" >
+                        <i className="fa-solid fa-globe"></i>
+                      </a>
+                    </div>
+                    <div className="person">
+                      <h1>{x.name}</h1>
+                      <span>{x.title}</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+          </div>
+        </div>
+      </div>
+      <div className="FAQ">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <span>{t("FAQ")}</span>
+              <h1>{t("FAQ_des")}</h1>
+            </div>
+              {question.map((x, index) => (
+                <div className="col-md-6" key={index}>
+                  <div className="card accordion-item en">
+                    <div className="card-header en" id={x.data_bs_target}>
+                      <button
+                        className="collapsed en"
+                        data-bs-toggle="collapse"
+                        data-bs-target={"#" + x.aria_labelled}
+                        aria-expanded="false"
+                        aria-controls={x.aria_labelled}
+                      >
+                        {i18n.language === "en"
+                          ? x.question
+                          : x.question_ar}
+                      </button>
+                    </div>
+                    <div
+                      id={x.aria_labelled}
+                      className="collapse"
+                      aria-labelledby={x.data_bs_target}
+                      data-bs-target="#accordion-1"
+                    >
+                      <div className="card-body">
+                        <p>
+                          {i18n.language === "en" ? x.answer : x.answer_ar}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+              <div className="col-md-12 mt-5">
+                <Link to="#!" className="VIEW_MORE">{t("VIEW_MORE")}</Link>
+              </div>
           </div>
         </div>
       </div>

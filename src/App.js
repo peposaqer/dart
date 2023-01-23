@@ -15,6 +15,7 @@ import Contact from "./components/Pages/Contact";
 import Privacy from "./components/Pages/Privacy";
 import Terms from "./components/Pages/Terms";
 import FAQ from "./components/Pages/FAQ";
+import Projects from "./components/Pages/projects";
 
 function App() {
   const [lang, setLang] = useState("");
@@ -120,6 +121,12 @@ function App() {
             path="/FAQ"
             exact
             element={<FAQ />}
+            changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}
+          />
+          <Route
+            path="/Projects"
+            exact
+            element={<Projects />}
             changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}
           />
         </Routes>

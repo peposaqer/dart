@@ -54,4 +54,12 @@ export const TRANSLATIONS_ar = {
   join: "انضم إلى مجتمعنا",
   group: "انضم إلى مجموعة Facebook الخاصة بنا ودعنا نتحدث.",
   now: "انضم الان",
+  FAQ: "الاسئله الشائعه",
+  projects: "المشاريع",
+  Featured_projects: "مشاريع مميزة",
+  projects_des: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+  Team: "التق بفريقنا",
+  Team_header: "فريق فني",
+  Team_des: "Suspendisse in magna in elit hendrerit condimen. Phasellus eu justo mi. Proin aliquet, mauris avol lobortis erat libero condimentum metus.",
+  FAQ_des: "إذا لم تجد إجابة على سؤالك ، يمكنك إرسال بريد إلكتروني إلينا من نموذج الاتصال الخاص بنا.",
 };

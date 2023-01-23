@@ -27,6 +27,7 @@ function Footer() {
                                 <li><Link to="#!" >{t("home")}</Link></li>
                                 <li><Link to="#!" >{t("about_nav")}</Link></li>
                                 <li><Link to="#!" >{t("contact")}</Link></li>
+                                <li><Link to="#!" >{t("FAQ")}</Link></li>
                                 <li><Link to="#!" >{t("terms")}</Link></li>
                                 <li><Link to="#!" >{t("Privacy")}</Link></li>
                             </ul>

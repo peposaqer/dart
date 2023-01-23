@@ -62,9 +62,6 @@ $mainSize: 18px;
             h1 {
                 color: $headerColor;
                 font-size: 35px;
-                i {
-
-                }
             }
             p {
                 font-size: $mainSize;
@@ -292,6 +289,73 @@ $mainSize: 18px;
     }
 }
 
+.projects {
+    text-align: center !important;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .col-lg-4:nth-of-type(3),
+    .col-lg-4:nth-of-type(6) {
+        position: relative;
+        top: 3rem;
+    }
+    a {
+        text-decoration: none;
+    }
+    span {
+        font-size: 22px;
+        color: $headerColor;
+        letter-spacing: 5px;
+    }
+    h1 {
+        color: #FFF;
+        font-size: 36px;
+        margin-top: .4rem;
+        margin-bottom: 1.2rem;
+    }
+    p {
+        font-size: $mainSize;
+        color: #8C8E90;
+        margin-bottom: 1.5rem;
+    }
+    .pro {
+        height: 400px;
+        width: 100%;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background-size: cover;
+        transition: all .3s;
+        div {
+            background-color: #c69649e5;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+            border: 1px solid #c69649cc;
+            display: none;
+            transition: all .3s;
+            h1 {
+                font-size: 65px;
+                color: #FFF;
+            }
+            span {
+                font-size: 18px;
+                color: #FFF;
+            }
+        }
+        &:hover {
+            bottom: 1rem;
+            position: relative;
+            transition: all .3s;
+            scale: 1.0999;
+            div {
+                display: flex !important;
+                transition: all .3s;
+            }
+        }
+    }
+}
+
 .request {
     background-image: url("../../img/christoph-theisinger-aTD1exk7Uh8-unsplash.jpg");
     background-attachment: fixed;
@@ -380,6 +444,121 @@ $mainSize: 18px;
         p{
             color: #404040;
             margin-top: 1rem;
+        }
+    }
+}
+
+.team {
+    text-align: center !important;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    span {
+        font-size: 22px;
+        color: $headerColor;
+        letter-spacing: 5px;
+    }
+    h1 {
+        color: #FFF;
+        font-size: 36px;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+    p {
+        font-size: $mainSize;
+        color: #8C8E90;
+        margin-bottom: 1.5rem;
+    }
+    .team-div {
+        background-size: cover;
+        height: 450px;
+        width: 100%;
+        background-position: center;
+        position: relative;
+        margin-bottom: 2rem;
+        .media {
+            position: absolute;
+            right: 1rem;
+            bottom: 1rem;
+            display: none;
+            transition: all .3s;
+            a {
+                display: block;
+                font-size: 25px;
+                background-color: #C69749;
+                margin-bottom: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                text-decoration: none;
+                color: #FFF;
+                &:hover {
+                    color: #C69749;
+                    background-color: transparent;
+                }
+            }
+        }
+        .person {
+            background-color: $tagsColor;
+            position: absolute;
+            bottom: 3rem;
+            height: 120px;
+            // padding: 0rem 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+            width: 60%;
+            left: -.5rem;
+            h1 {
+                font-size: 18px;
+                margin: 0;
+            }
+            span {
+                font-size: 12px;
+                color: #FFF;
+            }
+        }
+        &:hover {
+            .media {
+                display: block;
+                transition: all .3s;
+            }
+        } 
+    }
+}
+
+.FAQ {
+    text-align: center !important;
+    padding-bottom: 5rem;
+    span {
+        font-size: 22px;
+        color: $headerColor;
+        letter-spacing: 5px;
+    }
+    h1 {
+        color: #FFF;
+        font-size: 36px;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+    .accordion-item {
+        background-color: $mainColor;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 12px;
+        button {
+            border: none;
+            background-color: transparent;
+            font-size: 18px;
+            color: #FFF;
+        }
+        p {
+            font-size: 16px;
+            color: $tagsColor;
         }
     }
 }
@@ -477,6 +656,15 @@ $mainSize: 18px;
             transition: all .5s;
         }
     }
+    .projects {
+        .col-lg-4:nth-of-type(3),
+        .col-lg-4:nth-of-type(6) {
+            top: 0rem;
+        }
+    }
+    .team {
+        height: 100%;
+    }
 }
 
 @media (max-width: 450px) {
@@ -490,7 +678,6 @@ $mainSize: 18px;
         }
     }
 }
-
 
 @media (max-width: 320px) {
     .request {
