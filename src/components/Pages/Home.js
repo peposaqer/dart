@@ -20,6 +20,8 @@ import Countter from "../Data/countter"
 import i18n from "i18next";
 import "../translations/i18n";
 import News from "../Data/news";
+import client from "../Data/client";
+import VisibilitySensor from 'react-visibility-sensor';
 
 function Home() {
   const { t } = useTranslation();
@@ -209,7 +211,36 @@ function Home() {
             </div>
             <Slide /> 
           </div>
-          <div className="test"></div>
+          <div className="test">
+            <Swiper
+              slidesPerView={1}
+              navigation={true}
+              modules={[ Navigation]}
+              className="mySwiper"
+            >
+                {client.map((x, index) => (
+                  <SwiperSlide key={index}>
+                    <div className="client">
+                      <p>{i18n.language === "en"
+                                ? x.description
+                                : x.description_ar}</p>
+                      <div className="quote">
+                        <div className="qu">
+                          <img src={x.src} alt="" />
+                          <div>
+                            <h1>{i18n.language === "en"
+                                  ? x.name
+                                  : x.name_ar}</h1>
+                            <span>Client</span>
+                          </div>
+                        </div>
+                        <i className="fa-solid fa-quote-right"></i>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                ))}
+            </Swiper>
+          </div>
           <div className="count en">
             <div className="row">
               {Countter.map((x, index) => (
@@ -218,10 +249,12 @@ function Home() {
                             ? x.name
                             : x.name_ar}</h1>
                   <CountUp start={0} end={x.end} delay={3} duration={4}>
-                    {({ countUpRef }) => (
-                      <div>
-                        <span ref={countUpRef} />
-                      </div>
+                    {({ countUpRef, start }) => (
+                      <VisibilitySensor onChange={start}>
+                        <div>
+                          <span ref={countUpRef} />
+                        </div>
+                      </VisibilitySensor>
                     )}
                   </CountUp>
                     <h6>{i18n.language === "en"
