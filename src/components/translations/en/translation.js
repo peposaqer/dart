@@ -60,7 +60,7 @@ export const TRANSLATIONS_en = {
   Team_header: "Professional Team",
   Team_des: "Suspendisse in magna in elit hendrerit condimen. Phasellus eu justo mi. Proin aliquet, mauris avol lobortis erat libero condimentum metus.",
   FAQ_des: "If you don't see an answer to your question, you can send us an email from our contact form.",
-  Design: "Design",
+  Follow: "Follow Us",
   Design: "Design",
   Design: "Design",
   Design: "Design",

@@ -362,6 +362,7 @@ function Home() {
                       <h1>{x.name}</h1>
                       <span>{x.title}</span>
                     </div>
+                    <div className="overlay"></div>
                   </div>
                 </div>
               ))}
