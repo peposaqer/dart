@@ -75,7 +75,7 @@ function Nav_1(props) {
                 <img
                   className="logo-dark"
                   src={Logo}
-                  srcSet="./assets/img/logo@2x.png 2x"
+                  srcSet=""
                   alt="00"
                 />
               </Link>

@@ -179,13 +179,13 @@ function Home() {
                 <i className="fa-solid fa-bars-progress"></i>
                 <h1 className="Strategy">{t("Strategy")}</h1>
                 <p className="Strategy_description">{t("Strategy_description")}</p>
-                <Link to="Services" className="LEAREN_MORE">{t("LEAREN_MORE")}</Link>
+                <Link to="/Services" className="LEAREN_MORE">{t("LEAREN_MORE")}</Link>
               </div>
               <div className="best view">
                 <img src={view} alt="" />
                 <div>
                   <p className="Know">{t("Know")}</p>
-                  <Link to="Services" className="VIEW_MORE">{t("VIEW_MORE")}</Link>
+                  <Link to="/Services" className="VIEW_MORE">{t("VIEW_MORE")}</Link>
                 </div>
               </div>
             </div>
@@ -194,13 +194,13 @@ function Home() {
                 <i className="fa-solid fa-chalkboard-user"></i>
                 <h1 className="Planning">{t("Planning")}</h1>
                 <p className="Planning_description">{t("Planning_description")}</p>
-                <Link to="Services" className="LEAREN_MORE">{t("LEAREN_MORE")}</Link>
+                <Link to="/Services" className="LEAREN_MORE">{t("LEAREN_MORE")}</Link>
               </div>
               <div className="best">
                 <i className="fa-solid fa-bars-progress"></i>
                 <h1 className="Risk">{t("Risk")}</h1>
                 <p className="Risk_description">{t("Risk_description")}</p>
-                <Link to="Services" className="LEAREN_MORE">{t("LEAREN_MORE")}</Link>
+                <Link to="/Services" className="LEAREN_MORE">{t("LEAREN_MORE")}</Link>
               </div>
             </div>
           </div>
@@ -380,6 +380,7 @@ function Home() {
                 <div className="col-md-6" key={index}>
                   <div className="card accordion-item en">
                     <div className="card-header en" id={x.data_bs_target}>
+                      <i className="fa-solid fa-sort-down"></i>
                       <button
                         className="collapsed en"
                         data-bs-toggle="collapse"

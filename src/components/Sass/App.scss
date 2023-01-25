@@ -39,7 +39,6 @@ body {
 .utility {
   background: linear-gradient(70deg, $mainColor 15%, rgba(0, 0, 0, 0.461) 100%), url('../img/ramon-kagie-GEKbKJZcEm0-unsplash.jpg');
   background-size: cover;
-  // object-fit: cover;
   height: 60vh;
   display: flex;
   justify-content: center;
@@ -48,9 +47,6 @@ body {
   .ul {
     background-color: $tagsColor;
     width: 400px;
-    // width: 100%;
-    // box-shadow: 0px 0px 10px 0px rgb(79 79 79 / 10%);
-    // margin: 10px 10px 10px 10px;
     padding: 2rem;
     h1 {
       color: #FFF;
@@ -65,4 +61,47 @@ body {
       }
     }
   }
+}
+
+.creative {
+  padding: 5rem 0;
+  h1 {
+    font-size: 160px;
+    font-weight: bold;
+    line-height: 120px;
+    font-style: italic;
+    letter-spacing: 0px;
+    font-family: 'Kalam', cursive;
+    color: #FFF;
+    span {
+      margin-right: 1rem;
+      color: $tagsColor;
+      display: inline-block;
+    }
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .creative {
+      h1 {
+        font-size: 90px;
+      }
+    }
+}
+
+@media (max-width: 450px) {
+    .utility {
+      .ul {
+        width: 100%;
+      }
+    }
+    .creative {
+      h1 {
+        font-size: 40px;
+        line-height: 40px;
+      }
+    }
 }

@@ -48,3 +48,13 @@ $tagsColor: #C69749;
     border-radius: 36px;
     background-color: $tagsColor;
 }
+
+.read {    
+    text-decoration: line-through;
+    color: #282A3A;
+    font-size: 18px;
+    font-weight: bold;
+    &:hover {
+        color: $mainColor;
+    }
+}

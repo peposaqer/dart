@@ -24,12 +24,12 @@ function Footer() {
                         <div className="col-md-6">
                             <h3>{t("Links")}</h3>
                             <ul>
-                                <li><Link to="#!" >{t("home")}</Link></li>
-                                <li><Link to="#!" >{t("about_nav")}</Link></li>
-                                <li><Link to="#!" >{t("contact")}</Link></li>
-                                <li><Link to="#!" >{t("FAQ")}</Link></li>
-                                <li><Link to="#!" >{t("terms")}</Link></li>
-                                <li><Link to="#!" >{t("Privacy")}</Link></li>
+                                <li><Link to="/" >{t("home")}</Link></li>
+                                <li><Link to="/about" >{t("about_nav")}</Link></li>
+                                <li><Link to="/Contact" >{t("contact")}</Link></li>
+                                <li><Link to="/FAQ" >{t("FAQ")}</Link></li>
+                                <li><Link to="/Terms" >{t("terms")}</Link></li>
+                                <li><Link to="/Privacy" >{t("Privacy")}</Link></li>
                             </ul>
                         </div>
                         <div className="col-md-6">
@@ -38,6 +38,7 @@ function Footer() {
                             <Link to="#!" className="Now">{t("now")}</Link>
                         </div>
                         <div className="col-md-12">
+                            <h3>{t("follow")}</h3>
                             <ul className="social">
                                 <li><a href="#!"><i className="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#!"><i className="fab fa-instagram"></i></a></li>

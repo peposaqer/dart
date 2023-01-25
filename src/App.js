@@ -16,6 +16,8 @@ import Privacy from "./components/Pages/Privacy";
 import Terms from "./components/Pages/Terms";
 import FAQ from "./components/Pages/FAQ";
 import Projects from "./components/Pages/projects";
+import ScrollToTop from "./components/Pages/ScrollToTop";
+import Top from "./components/Pages/backToTop";
 
 function App() {
   const [lang, setLang] = useState("");
@@ -68,6 +70,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}/>
         <Routes>
           <Route
@@ -131,6 +134,7 @@ function App() {
           />
         </Routes>
         <Footer changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}/>
+        <Top />
       </BrowserRouter>
     </>
   );
