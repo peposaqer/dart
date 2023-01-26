@@ -76,7 +76,7 @@ function About() {
                   <h3>01. {t("endless")}</h3>
                   <h3>02. {t("creative")}</h3>
                 </div>
-                <Link to="/" className="VIEW_MORE">{t("about")}</Link>
+                <Link to="/Services" className="VIEW_MORE">{t("about")}</Link>
               </div>
             </div>
           </div>
@@ -127,7 +127,7 @@ function About() {
             </div>
             <div className="col-md-6">
               <div className="location">
-                <i class="fa-solid fa-map-location-dot"></i>
+                <i className="fa-solid fa-map-location-dot"></i>
                 <div>
                   <h2>{t("location")}</h2>
                   <p>{t("location_des")}</p>
@@ -136,7 +136,7 @@ function About() {
             </div>
             <div className="col-md-6">
               <div className="location">
-                <i class="fa-solid fa-envelope-open-text"></i>
+                <i className="fa-solid fa-envelope-open-text"></i>
                 <div>
                   <h2>{t("address")}</h2>
                   <a href="mailto: info@peposaqer.com">info@dart.com</a>
@@ -145,7 +145,7 @@ function About() {
             </div>
             <div className="col-md-6">
               <div className="location">
-                <i class="fa-solid fa-phone"></i>
+                <i className="fa-solid fa-phone"></i>
                 <div>
                   <h2>{t("Phone")}</h2>
                   <a href="tel: 01154258770">01154258770</a>
@@ -154,7 +154,7 @@ function About() {
             </div>
             <div className="col-md-6">
               <div className="location">
-                <i class="fa-regular fa-clock"></i>
+                <i className="fa-regular fa-clock"></i>
                 <div>
                   <h2>{t("Work_Hours")}</h2>
                   <p>{t("Work_Hours_des")}</p>

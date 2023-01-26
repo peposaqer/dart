@@ -22,6 +22,7 @@ $tagsColor: #C69749;
 
 .VIEW_MORE {
     text-decoration: none !important;
+    background-color: transparent !important;
     font-weight: bold;
     color: #FFF!important;
     font-size: 18px;
@@ -56,5 +57,11 @@ $tagsColor: #C69749;
     font-weight: bold;
     &:hover {
         color: $mainColor;
+    }
+}
+
+@media (max-width: 991px) {
+    .Now {
+        padding: .8rem .5rem;
     }
 }

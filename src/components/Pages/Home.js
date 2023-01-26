@@ -333,6 +333,9 @@ function Home() {
                   </div>
                 </div>
               ))}
+              <div className="col-md-12 mt-5 text-center">
+                <Link to="/News" className="VIEW_MORE">{t("VIEW_MORE")}</Link>
+              </div>
           </div>
         </div>
       </div>

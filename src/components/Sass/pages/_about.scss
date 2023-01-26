@@ -5,6 +5,11 @@ $tagsColor: #C69749;
 $headerSize: 44px;
 $mainSize: 18px;
 
+.aboutUS {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 .solution {
     height: 60vh;
     display: flex;
@@ -284,6 +289,10 @@ $mainSize: 18px;
                 }
             }
         }
+    }
+    .corporate {
+        height: 100%;
+        padding: 3rem 0;
     }
 }
 

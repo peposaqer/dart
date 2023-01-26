@@ -548,6 +548,9 @@ $mainSize: 18px;
 .FAQ {
     text-align: center !important;
     padding-bottom: 5rem;
+    .card-header {
+        display: flex;
+    }
     span {
         font-size: 22px;
         color: $headerColor;

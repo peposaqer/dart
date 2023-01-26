@@ -91,7 +91,7 @@ function Nav_1(props) {
                   <img
                     className="logo-dark"
                     src={Logo}
-                    srcSet="./assets/img/logo@2x.png 2x"
+                    srcSet=""
                     alt="00"
                   />
                 </h3>
@@ -233,11 +233,11 @@ function Nav_1(props) {
             <Link to="/">
               <img
                 src={Logo}
-                srcSet="./assets/img/logo-light@2x.png 2x"
+                srcSet=""
                 alt=""
               />
             </Link>
-              <i className="fa-solid fa-times close" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+            <i className="fa-solid fa-times close" data-bs-dismiss="offcanvas" aria-label="Close"></i>
           </div>
           <div className="offcanvas-body pb-6">
             <div className="widget mb-8">
@@ -256,13 +256,13 @@ function Nav_1(props) {
               <h4 className="widget-title text-white mb-3">{t("Links")}</h4>
               <ul className="list-unstyled">
                 <li>
-                  <Link to="/Gyms">{t("Gyms")}</Link>
-                </li>
-                <li>
-                  <Link to="/Mobile">{t("Mobile")}</Link>
+                  <Link to="/">{t("Home")}</Link>
                 </li>
                 <li>
                   <Link to="/About">{t("about_nav")}</Link>
+                </li>
+                <li>
+                  <Link to="/FAQ">{t("FAQ")}</Link>
                 </li>
                 <li>
                   <Link to="/Privacy">{t("Privacy")}</Link>
