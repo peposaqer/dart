@@ -31,6 +31,7 @@ function Home() {
   const List = News.filter((d) => d.selected === false);
   const List2 = News.filter((d) => d.selected === true);
   const project = Projects.filter((d) => d.selected === true);
+  const questions = question.filter((d) => d.selected === true);
 
   return (
     <div className="home">
@@ -301,7 +302,7 @@ function Home() {
           <span className="">{t("REQUEST")}</span>
           <h1>{t("REQUEST_header")}</h1>
           <p>{t("REQUEST_description")}</p>
-          <Link className="VIEW_MORE" to="#!">{t("REQUEST_link")}</Link>
+          <Link className="VIEW_MORE" to="/Services">{t("REQUEST_link")}</Link>
         </div>
       </div>
       <div className="blog en">
@@ -314,7 +315,7 @@ function Home() {
               </div>
               {List.map((x, index) => (
                   <div className="step" key={index}>
-                    <Link to={x.link}>{x.step}</Link>
+                    <Link to="/News">{x.step}</Link>
                     <span><i className="fa-solid fa-clock"></i>{x.time}</span>
                   </div>
                 ))}
@@ -322,7 +323,7 @@ function Home() {
             {List2.map((x, index) => (
                 <div className="col-md-4" key={index}>
                   <div className="step">
-                    <Link to="#!" className="new" style={{ backgroundImage: `url(${x.src})` }}>
+                    <Link to="/News" className="new" style={{ backgroundImage: `url(${x.src})` }}>
                       <strong>{x.span}</strong>
                     </Link>
                     <Link to={x.link}>{x.step}</Link>
@@ -379,7 +380,7 @@ function Home() {
               <span>{t("FAQ")}</span>
               <h1>{t("FAQ_des")}</h1>
             </div>
-              {question.map((x, index) => (
+              {questions.map((x, index) => (
                 <div className="col-md-6" key={index}>
                   <div className="card accordion-item en">
                     <div className="card-header en" id={x.data_bs_target}>
@@ -412,7 +413,7 @@ function Home() {
                 </div>
               ))}
               <div className="col-md-12 mt-5">
-                <Link to="#!" className="VIEW_MORE">{t("VIEW_MORE")}</Link>
+                <Link to="/FAQ" className="VIEW_MORE">{t("VIEW_MORE")}</Link>
               </div>
           </div>
         </div>

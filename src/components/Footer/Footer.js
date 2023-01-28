@@ -38,7 +38,7 @@ function Footer() {
                             <Link to="#!" className="Now">{t("now")}</Link>
                         </div>
                         <div className="col-md-12">
-                            <h3>{t("follow")}</h3>
+                            <h3>{t("Follow")}</h3>
                             <ul className="social">
                                 <li><a href="#!"><i className="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#!"><i className="fab fa-instagram"></i></a></li>

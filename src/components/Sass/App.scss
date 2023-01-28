@@ -53,6 +53,7 @@ body {
     background-color: $tagsColor;
     width: 400px;
     padding: 2rem;
+    border-radius: 16px;
     h1 {
       color: #FFF;
       font-size: 45px;
@@ -82,6 +83,24 @@ body {
       margin-right: 1rem;
       color: $tagsColor;
       display: inline-block;
+    }
+  }
+}
+
+.terms {
+  .card {
+    margin: 1rem 0;
+    background-color: $mainColor;
+    color: #FFF;
+    h2 {
+      color: $headerColor;
+    }
+  } 
+  .widget {
+    position: sticky;
+    top: 1rem;
+    .nav-link {
+      color: $tagsColor;
     }
   }
 }

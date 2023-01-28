@@ -585,6 +585,52 @@ $mainSize: 18px;
     }
 }
 
+.info {
+    .have {
+        margin: 5rem 0 !important;
+    }
+}
+
+.com {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+    span {
+        font-size: 22px;
+        color: $headerColor;
+        letter-spacing: 5px;
+    }
+    h1 {
+        color: #FFF;
+        font-size: 36px;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+    p {
+        font-size: $mainSize;
+        color: #FFF;
+        margin-bottom: 1.5rem;
+    }
+    img {
+        height: 750px;
+        width: 100%;
+    }
+    .review {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        // height: 100%;
+        background-color: $tagsColor;
+        padding: 2rem;
+        border-radius: 16px;
+        position: relative;
+        left: -6rem;
+        top: 30%;
+    }
+}
+
 @media (max-width: 1024px) {
     .testimonial {
         .test {
@@ -686,6 +732,20 @@ $mainSize: 18px;
     }
     .team {
         height: 100%;
+    }
+    .com {
+        height: 100%;
+        padding: 2rem 0;
+        .review {
+            margin-top: 3rem;
+            position: unset;
+        }
+    }
+    .info .have {
+        margin: 0rem 0 !important;
+    }
+    .have {
+        padding: 1rem 0 !important;
     }
 }
 

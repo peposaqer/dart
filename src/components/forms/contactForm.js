@@ -1,5 +1,6 @@
 import * as Yup from 'yup';
 import { useFormik } from "formik";
+import { t } from 'i18next';
 
 export  const ContactForm = () => {
 
@@ -29,7 +30,7 @@ export  const ContactForm = () => {
                 <div className='col-md-6'>
                     <input
                         type="text"
-                        placeholder="Full name"
+                        placeholder={t("Full")}
                         className="form-contact"
                     />
                     {(touched.fullName && errors.fullName) && <span className="error">{errors.fullName}</span>}
@@ -37,7 +38,7 @@ export  const ContactForm = () => {
                 <div className='col-md-6'>
                     <input
                         type="email"
-                        placeholder="E-mail"
+                        placeholder={t("E_mail")}
                         className="form-contact"
                     />
                     {(touched.email && errors.email) && <span className="error">{errors.email}</span>}
@@ -45,7 +46,7 @@ export  const ContactForm = () => {
                 <div className='col-md-6'>
                     <input
                         type="number"
-                        placeholder="Phone"
+                        placeholder={t("Phone")}
                         className="form-contact"
                     />
                     {(touched.Phone && errors.Phone) && <span className="error">{errors.Phone}</span>}
@@ -53,7 +54,7 @@ export  const ContactForm = () => {
                 <div className='col-md-6'>
                     <input
                         type="text"
-                        placeholder="subject"
+                        placeholder={t("Subject")}
                         className="form-contact"
                     />
                     {(touched.subject && errors.subject) && <span className="error">{errors.subject}</span>}
@@ -61,7 +62,7 @@ export  const ContactForm = () => {
                 <div className='col-md-12'>
                     <textarea
                         type="text"
-                        placeholder="help"
+                        placeholder={t("How")}
                         className="form-contact"
                     />
                     {(touched.help && errors.help) && <span className="error">{errors.help}</span>}

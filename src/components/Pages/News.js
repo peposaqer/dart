@@ -33,10 +33,10 @@ function News() {
             {New.map((x, index) => (
                 <div className="col-md-4" key={index}>
                   <div className="step">
-                    <Link to="#!" className="new" style={{ backgroundImage: `url(${x.src})` }}>
+                    <Link to="/Contact" className="new" style={{ backgroundImage: `url(${x.src})` }}>
                       <strong>{x.span}</strong>
                     </Link>
-                    <Link to={x.link}>{x.step}</Link>
+                    <Link to="/Contact">{x.step}</Link>
                     <span><i className="fa-solid fa-clock"></i>{x.time}</span>
                     <p>{i18n.language === "en"
                             ? x.description
