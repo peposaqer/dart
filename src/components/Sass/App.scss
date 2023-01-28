@@ -8,6 +8,7 @@
 @import "./pages/home";
 @import "./pages/projects";
 @import "./pages/services";
+@import "./pages/news";
 @import "./lang/lang.scss";
 @import "./components/form";
 @import "./components/models";
@@ -60,7 +61,7 @@ body {
       font-size: 18px;
       color: #FFF;
       i {
-        margin: 0rem 2rem;
+        margin: 0rem 1rem;
         color: #000;
       }
     }

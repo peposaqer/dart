@@ -127,4 +127,5 @@ export const TRANSLATIONS_ar = {
   have_header: "هل لديك أسئلة؟",
   have_des: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
   Submit: "سجل الان",
+  details: "التفاصيل",
 };

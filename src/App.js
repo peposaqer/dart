@@ -18,6 +18,7 @@ import FAQ from "./components/Pages/FAQ";
 import Projects from "./components/Pages/projects";
 import ScrollToTop from "./components/Pages/ScrollToTop";
 import Top from "./components/Pages/backToTop";
+import SingleProject from "./components/Pages/SingleProject";
 
 function App() {
   const [lang, setLang] = useState("");
@@ -132,6 +133,12 @@ function App() {
             element={<Projects />}
             changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}
           />
+          <Route
+              path="/SingleProject/:id"
+              exact
+              element={<SingleProject />}
+              changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}
+            />
         </Routes>
         <Footer changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}/>
         <Top />

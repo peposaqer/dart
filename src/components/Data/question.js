@@ -65,6 +65,380 @@ const Plans = [
     data_bs_target: "accordion-heading-2-3",
     aria_labelled: "accordion-collapse-2-3",
   },
+  {
+    id: 7,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 8,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 9,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 10,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
+  {
+    id: 6,
+    question: "What does the free subscription offer?",
+    question_ar: "ماذا يقدم الاشتراك المجاني؟",
+    answer:
+      "The free subscription offers accepting payment from clients with no limits, but you can't use the full dashboard to manage your gym.",
+    answer_ar:
+      "يقدم الاشتراك المجاني قبول الدفع من العملاء بلا حدود ، ولكن لا يمكنك استخدام لوحة القيادة الكاملة لإدارة صالة الألعاب الرياضية الخاصة بك.",
+    data_bs_target: "accordion-heading-2-3",
+    aria_labelled: "accordion-collapse-2-3",
+  },
 ];
 
 export default Plans;
