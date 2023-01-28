@@ -65,6 +65,10 @@ $tagsColor: #C69749;
     margin-left: 1rem;
 }
 
+.offcanvas .nav-link.active {
+    color: #FFF !important;
+}
+
 .header-home {
     position: absolute !important;
     z-index: 10;

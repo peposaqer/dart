@@ -100,39 +100,39 @@ function Nav_1(props) {
               <div className="offcanvas-body d-flex flex-column h-100 e">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <Link to="/" className="nav-link fromRight">
+                    <NavLink to="/" activeClassName="active" className="nav-link fromRight">
                       {t("home")}
-                    </Link>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <Link to="/About" className="nav-link">
+                    <NavLink to="/About" activeClassName="active" className="nav-link">
                       {t("about_nav")}
-                    </Link>
+                    </NavLink>
                   </li>
                   <li className="nav-item ">
-                    <Link to="/Services" className="nav-link">
+                    <NavLink to="/Services" activeClassName="active" className="nav-link">
                       {t("Services")}
-                    </Link>
+                    </NavLink>
                   </li>
                   <li className="nav-item ">
-                    <Link to="/projects" className="nav-link">
+                    <NavLink to="/projects" activeClassName="active" className="nav-link">
                       {t("projects")}
-                    </Link>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <Link to="/News" className="nav-link">
+                    <NavLink to="/News" activeClassName="active" className="nav-link">
                       {t("NEWS_nav")}
-                    </Link>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <Link to="/Careers" className="nav-link">
+                    <NavLink to="/Careers" activeClassName="active" className="nav-link">
                       {t("Careers")}
-                    </Link>
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <Link to="/Contact" className="nav-link">
+                    <NavLink to="/Contact" activeClassName="active" className="nav-link">
                       {t("contact")}
-                    </Link>
+                    </NavLink>
                   </li>
                 </ul>
                 <div className="offcanvas-footer d-lg-none">
