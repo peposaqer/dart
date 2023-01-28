@@ -14,6 +14,17 @@ const DATA = Service
 const LIMIT = 6;
 function Services() {
   const { t } = useTranslation();
+  const [model, setModel] = useState(false)
+  const [tempimgSrc, setTempimgSrc] = useState('')
+  const [title, setTitle] = useState('')
+  const [header, setHeader] = useState('')
+
+  const getImg = (src, title, header) => {
+    setTempimgSrc(src);
+    setTitle(title)
+    setHeader(header)
+    setModel(true)
+  }
 
   const [showMore, setShowMore] = useState(true);
   const [list, setList] = useState(slice(DATA, 0, LIMIT));
@@ -47,7 +58,7 @@ function Services() {
               <p>{t("Services_description")}</p>
             </div>
             {list.map((x, index) => (
-                <div className="col-lg-4 col-md-6" key={index}>
+                <div className="col-lg-4 col-md-6" key={index} onClick={() => getImg(x.src, x.name, x.span)}>
                   <div className="best">
                     <i className={x.icon}></i>
                     <h1 className="Business">
@@ -65,6 +76,23 @@ function Services() {
                 <button className="VIEW_MORE" onClick={loadMore}> {t("VIEW_MORE")} </button>
               )}
             </div>
+          </div>
+        </div>
+      </div>
+      <div className={model ? "model open" : "model"}>
+        <Link onClick={() => setModel(false)}><i className="fa fa-times"></i></Link>
+        <div className="row">
+          <div className="col-md-6">
+            <img src={tempimgSrc} />
+          </div>
+          <div className="col-md-6">
+            <h1 className="Business">
+              {header}
+            </h1>
+            <p className="Business_description">
+              {title}
+            </p>
+            <Link to="/Contact" className="LEAREN_MORE">{t("Book_now")}</Link>
           </div>
         </div>
       </div>

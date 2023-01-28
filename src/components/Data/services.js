@@ -1,3 +1,10 @@
+import img from "../img/2CUG9YD-150x150.jpg"
+import img1 from "../img/6AT2QYH-150x150.jpg"
+import img2 from "../img/P2UGM57-150x150.jpg"
+import img3 from "../img/E3CC8GB-150x150.jpg"
+import img4 from "../img/2CUG9YD-150x150.jpg"
+import img5 from "../img/2CUG9YD-150x150.jpg"
+
 const Service = [
   {
     id: 1,
@@ -5,13 +12,15 @@ const Service = [
     span_ar: "مشاريع ناجحة",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    icon: "fa-solid fa-lightbulb"
+    icon: "fa-solid fa-lightbulb",
+    src: img1
   },
   {
     id: 2,
     span: "Social Branding",
     span_ar: "سنوات خبرة",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-chalkboard-user"
   },
@@ -20,6 +29,7 @@ const Service = [
     span: "Marketing Strategy",
     span_ar: "الفوز بجوائز",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-bars-progress"
   },
@@ -28,6 +38,7 @@ const Service = [
     span: "Business Planning",
     span_ar: "عملاء راضون",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-chalkboard-user"
   },
@@ -36,6 +47,7 @@ const Service = [
     span: "Risk Management",
     span_ar: "عملاء راضون",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-bars-progress"
   },
@@ -44,6 +56,7 @@ const Service = [
     span: "Business Solution",
     span_ar: "مشاريع ناجحة",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-lightbulb"
   },
@@ -52,6 +65,7 @@ const Service = [
     span: "Social Branding",
     span_ar: "سنوات خبرة",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-chalkboard-user"
   },
@@ -60,6 +74,7 @@ const Service = [
     span: "Marketing Strategy",
     span_ar: "الفوز بجوائز",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-bars-progress"
   },
@@ -68,6 +83,7 @@ const Service = [
     span: "Business Planning",
     span_ar: "عملاء راضون",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-chalkboard-user"
   },
@@ -76,6 +92,7 @@ const Service = [
     span: "Risk Management",
     span_ar: "عملاء راضون",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-bars-progress"
   },
@@ -84,6 +101,7 @@ const Service = [
     span: "Business Solution",
     span_ar: "مشاريع ناجحة",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-lightbulb"
   },
@@ -92,6 +110,7 @@ const Service = [
     span: "Social Branding",
     span_ar: "سنوات خبرة",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-chalkboard-user"
   },
@@ -100,6 +119,7 @@ const Service = [
     span: "Marketing Strategy",
     span_ar: "الفوز بجوائز",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-bars-progress"
   },
@@ -108,6 +128,7 @@ const Service = [
     span: "Business Planning",
     span_ar: "عملاء راضون",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-chalkboard-user"
   },
@@ -116,6 +137,7 @@ const Service = [
     span: "Risk Management",
     span_ar: "عملاء راضون",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-bars-progress"
   },
@@ -124,6 +146,7 @@ const Service = [
     span: "Business Solution",
     span_ar: "مشاريع ناجحة",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-lightbulb"
   },
@@ -132,6 +155,7 @@ const Service = [
     span: "Social Branding",
     span_ar: "سنوات خبرة",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-chalkboard-user"
   },
@@ -140,6 +164,7 @@ const Service = [
     span: "Marketing Strategy",
     span_ar: "الفوز بجوائز",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-bars-progress"
   },
@@ -148,6 +173,7 @@ const Service = [
     span: "Business Planning",
     span_ar: "عملاء راضون",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-chalkboard-user"
   },
@@ -156,6 +182,7 @@ const Service = [
     span: "Risk Management",
     span_ar: "عملاء راضون",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-bars-progress"
   },
