@@ -13,7 +13,11 @@ const Service = [
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-lightbulb",
-    src: img1
+    src: img1,
+    src1: img2,
+    src2: img3,
+    src3: img4,
+    src4: img5,
   },
   {
     id: 2,
@@ -22,7 +26,11 @@ const Service = [
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    icon: "fa-solid fa-chalkboard-user"
+    icon: "fa-solid fa-chalkboard-user",
+    src1: img2,
+    src2: img3,
+    src3: img4,
+    src4: img5,
   },
   {
     id: 3,
@@ -31,7 +39,11 @@ const Service = [
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    icon: "fa-solid fa-bars-progress"
+    icon: "fa-solid fa-bars-progress",
+    src1: img2,
+    src2: img3,
+    src3: img4,
+    src4: img5,
   },
   {
     id: 4,
@@ -40,7 +52,11 @@ const Service = [
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    icon: "fa-solid fa-chalkboard-user"
+    icon: "fa-solid fa-chalkboard-user",
+    src1: img2,
+    src2: img3,
+    src3: img4,
+    src4: img5,
   },
   {
     id: 5,
@@ -49,7 +65,11 @@ const Service = [
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    icon: "fa-solid fa-bars-progress"
+    icon: "fa-solid fa-bars-progress",
+    src1: img2,
+    src2: img3,
+    src3: img4,
+    src4: img5,
   },
   {
     id: 6,
@@ -58,7 +78,11 @@ const Service = [
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    icon: "fa-solid fa-lightbulb"
+    icon: "fa-solid fa-lightbulb",
+    src1: img2,
+    src2: img3,
+    src3: img4,
+    src4: img5,
   },
   {
     id: 7,
@@ -67,7 +91,11 @@ const Service = [
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    icon: "fa-solid fa-chalkboard-user"
+    icon: "fa-solid fa-chalkboard-user",
+    src1: img2,
+    src2: img3,
+    src3: img4,
+    src4: img5,
   },
   {
     id: 8,
@@ -76,7 +104,11 @@ const Service = [
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    icon: "fa-solid fa-bars-progress"
+    icon: "fa-solid fa-bars-progress",
+    src1: img2,
+    src2: img3,
+    src3: img4,
+    src4: img5,
   },
   {
     id: 9,
@@ -85,7 +117,11 @@ const Service = [
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    icon: "fa-solid fa-chalkboard-user"
+    icon: "fa-solid fa-chalkboard-user",
+    src1: img2,
+    src2: img3,
+    src3: img4,
+    src4: img5,
   },
   {
     id: 10,
@@ -94,7 +130,11 @@ const Service = [
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    icon: "fa-solid fa-bars-progress"
+    icon: "fa-solid fa-bars-progress",
+    src1: img2,
+    src2: img3,
+    src3: img4,
+    src4: img5,
   },
   {
     id: 11,

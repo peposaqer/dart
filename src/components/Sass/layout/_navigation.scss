@@ -29,6 +29,11 @@ $tagsColor: #C69749;
         &:hover:after {
             transform: scaleX(1);
         }
+        &.active:after {
+            transform: scaleX(1);
+            transition: all .3s;
+            border-bottom: 3px solid #FFF;
+        }
     }
 }
 .fa-circle-info {

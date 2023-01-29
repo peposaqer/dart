@@ -49,7 +49,10 @@ function Home() {
             <Swiper
               slidesPerView={1}
               pagination={true}
-              navigation={true}
+              navigation={{
+                nextEl: ".image-swiper-button-next",
+                prevEl: ".image-swiper-button-prev",
+              }}
               modules={[Pagination, Navigation]}
               className="swiper-wrapper"
             >
@@ -84,6 +87,12 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+              <Link to="#!" className="image-swiper-button-next">
+                <i className="fa fa-arrow-right"></i>
+              </Link>
+              <Link to="#!" className="image-swiper-button-prev">
+                <i className="fa fa-arrow-left"></i>
+              </Link>
             </Swiper>
           </>
         </div>

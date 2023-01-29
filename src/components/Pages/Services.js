@@ -9,18 +9,32 @@ import img from "../img/image-17-copyright-px6a5xgfkxbli55x5ol9l1l5bail6rkjoyxu8
 import img1 from "../img/blank-billboard-advertisement-isolated-wall-background-empty-mockup-template-800x449.jpg"
 import img2 from "../img/arno-senoner-Ie8k7RgNYmU-unsplash-phvsyth074k90a980fd1yr65e6y76i7zxtv2e8lh04.jpg"
 import ContactForm from "../forms/contactForm";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/effect-cube";
+import {EffectCube, Autoplay, Pagination, Navigation } from "swiper";
 
 const DATA = Service
 const LIMIT = 6;
 function Services() {
   const { t } = useTranslation();
   const [model, setModel] = useState(false)
-  const [tempimgSrc, setTempimgSrc] = useState('')
+  const [src, setSrc] = useState('')
+  const [src1, setSrc1] = useState('')
+  const [src2, setSrc2] = useState('')
+  const [src3, setSrc3] = useState('')
+  const [src4, setSrc4] = useState('')
   const [title, setTitle] = useState('')
   const [header, setHeader] = useState('')
 
-  const getImg = (src, title, header) => {
-    setTempimgSrc(src);
+  const getImg = (src, src1, src2, src3, src4, title, header) => {
+    setSrc(src);
+    setSrc1(src1);
+    setSrc2(src2);
+    setSrc3(src3);
+    setSrc4(src4);
     setTitle(title)
     setHeader(header)
     setModel(true)
@@ -58,7 +72,7 @@ function Services() {
               <p>{t("Services_description")}</p>
             </div>
             {list.map((x, index) => (
-                <div className="col-lg-4 col-md-6" key={index} onClick={() => getImg(x.src, x.name, x.span)}>
+                <div className="col-lg-4 col-md-6" key={index} onClick={() => getImg(x.src,x.src1, x.src2, x.src3, x.src4, x.name, x.span)}>
                   <div className="best">
                     <i className={x.icon}></i>
                     <h1 className="Business">
@@ -82,17 +96,53 @@ function Services() {
       <div className={model ? "model open" : "model"}>
         <Link onClick={() => setModel(false)}><i className="fa fa-times"></i></Link>
         <div className="row">
-          <div className="col-md-6">
-            <img src={tempimgSrc} />
+          <div className="col-md-12 p-0">
+            <Swiper
+              effect={"cube"}
+              grabCursor={true}
+              cubeEffect={{
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+              }}
+              centeredSlides={true}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+              navigation={{
+                nextEl: ".image-swiper-button-next",
+                prevEl: ".image-swiper-button-prev",
+              }}
+              modules={[EffectCube, Autoplay, Navigation]}
+              className="mySwiper"
+            >
+              <SwiperSlide><img src={src} /></SwiperSlide>
+              <SwiperSlide><img src={src1} /></SwiperSlide>
+              <SwiperSlide><img src={src2} /></SwiperSlide>
+              <SwiperSlide><img src={src3} /></SwiperSlide>
+              <SwiperSlide><img src={src4} /></SwiperSlide>
+              <Link to="#!" className="image-swiper-button-next">
+                <i className="fa fa-arrow-right"></i>
+              </Link>
+              <Link to="#!" className="image-swiper-button-prev">
+                <i className="fa fa-arrow-left"></i>
+              </Link>
+            </Swiper>
+            
           </div>
-          <div className="col-md-6">
-            <h1 className="Business">
+          <div className="col-md-12">
+          <div className="Business">
+            <h1>
               {header}
             </h1>
             <p className="Business_description">
               {title}
             </p>
             <Link to="/Contact" className="LEAREN_MORE">{t("Book_now")}</Link>
+          </div>
           </div>
         </div>
       </div>

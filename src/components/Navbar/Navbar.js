@@ -63,12 +63,11 @@ function Nav_1(props) {
   useEffect(() => {
     detectLang();
   }, []);
+
   return (
     <>
       <header className="wrapper bg-soft-primary en">
-        <nav
-          className={`${header} navbar navbar-expand-lg center-nav transparent navbar-dark caret-none en`}
-        >
+        <nav className={`${header} navbar navbar-expand-lg center-nav transparent navbar-dark caret-none en`}>
           <div className="container flex-lg-row flex-nowrap align-items-center en">
             <div className="navbar-brand">
               <Link to="/">
@@ -80,12 +79,8 @@ function Nav_1(props) {
                 />
               </Link>
             </div>
-            <div
-              className="navbar-collapse offcanvas offcanvas-nav offcanvas-start en"
-              tabIndex="-1"
-              id="offcanvasExample"
-              aria-labelledby="offcanvasExampleLabel"
-            >
+            <div className={`navbar-collapse offcanvas offcanvas-nav offcanvas-start en`}
+              tabIndex="-1" id="offcanvasExample" data-bs-toggle="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
               <div className="offcanvas-header d-lg-none">
                 <h3 className="text-white fs-30 mb-0">
                   <img
@@ -224,11 +219,7 @@ function Nav_1(props) {
             </div>
           </div>
         </nav>
-        <div
-          className="offcanvas offcanvas-end text-inverse one"
-          id="offcanvas-info"
-          data-bs-scroll="true"
-        >
+        <div className="offcanvas offcanvas-end text-inverse one" id="offcanvas-info" data-bs-scroll="true">
           <div className="offcanvas-header">
             <Link to="/">
               <img

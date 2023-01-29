@@ -19,6 +19,7 @@ import Projects from "./components/Pages/projects";
 import ScrollToTop from "./components/Pages/ScrollToTop";
 import Top from "./components/Pages/backToTop";
 import SingleProject from "./components/Pages/SingleProject";
+import Social from "./components/Pages/social";
 
 function App() {
   const [lang, setLang] = useState("");
@@ -72,6 +73,7 @@ function App() {
     <>
       <BrowserRouter>
         <ScrollToTop />
+        <Social />
         <Navbar changeLang={() => handleOnclick(lang === "en" ? "ar" : "en")}/>
         <Routes>
           <Route
