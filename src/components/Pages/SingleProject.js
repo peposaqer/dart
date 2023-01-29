@@ -48,7 +48,7 @@ function SingleProject() {
                             <img alt="" src={x.src1} />
                         </div>
                         <div className="col-md-6 mb-3">
-                            <img alt="" src={x.src1} />
+                            <img alt="" src={x.src2} />
                         </div>
                         <div className="col-md-6 mb-3">
                             <img alt="" src={x.src3} />

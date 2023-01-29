@@ -178,7 +178,7 @@ function Nav_1(props) {
                 <li className="nav-item">
                   <Link
                     to ="#!"
-                    className="nav-link"
+                    className="nav-link border-none"
                     data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvas-info"
                   >

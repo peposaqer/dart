@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
 @import "./components/buttons";
 @import "./components/slider";
 @import "./components/carousel";
@@ -22,6 +24,7 @@ $tagsColor: #C69749;
 body {
   background-color: $bgColor;
   overflow-x: hidden;
+  font-family: 'Josefin Sans', sans-serif;
   &::-webkit-scrollbar {
     width: 3px;
     background-color: transparent;

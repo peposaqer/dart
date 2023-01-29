@@ -18,6 +18,9 @@ $tagsColor: #C69749;
         font-weight: bold;
         transition: all .3s;
         display:inline-block;
+        &.border-none:hover:after  {
+            transform: scaleX(0);
+        }
         &:after {
             border-bottom: 3px solid $tagsColor;
             transition: all .3s;

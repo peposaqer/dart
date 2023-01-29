@@ -9,27 +9,32 @@ import img6 from "../img/image-8-copyright.webp"
 import img7 from "../img/image-11-copyright.jpg"
 import img8 from "../img/image-11-copyright.jpg"
 import img9 from "../img/image-11-copyright.jpg"
+import sa2r_default from "../img/1.svg"
+import sa2rLogo from "../img/2.svg"
+import sa2r1 from "../img/Screenshot from 2023-01-29 19-57-11.png"
+import sa2r2 from "../img/Screenshot from 2023-01-29 20-05-45.png"
+import sa2r3 from "../img/Screenshot from 2023-01-29 19-57-45.png"
 
 export const Projects = [
   {
     id: 1,
     selected: true,
-    step: "Sign",
+    step: "Abdallah Saqer",
     name_ar: "إنشاء رسالة إخبارية تجلب لك العملاء",
-    name: "Social Media",
-    src: img,
-    category: "Social",
+    name: "Branding & Website",
+    src: sa2r_default,
+    category: "Website",
     name1: "Branding",
     name1_ar: "Branding",
-    name2: "Web Development",
-    name2_ar: "Web Development",
-    src1: img,
-    src2: img,
-    src3: img,
-    des: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
+    name2: "Website",
+    name2_ar: "Website",
+    src1: sa2r1,
+    src2: sa2r2,
+    src3: sa2r3,
+    des: "I'm a Egyption based front‑end developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.",
     des_ar: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-    link: "#!",
-    logo: logo1
+    link: "https://abdallahsaqer.netlify.app/",
+    logo: sa2rLogo
   },
   {
     id: 2,
