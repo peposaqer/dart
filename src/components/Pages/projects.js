@@ -6,27 +6,44 @@ import { useTranslation } from "react-i18next";
 import "../translations/i18n";
 import i18n from "i18next";
 import Projects from "../Data/projects";
+import { buttons } from "./category";
 
 function Project() {
   const { t } = useTranslation();
+  const DATA = Projects
+  const LIMIT = 6;
 
-  const [tag, setTag] = useState('all');
-	const [filteredImages, setFilteredImages] = useState([]);
+const [showMore, setShowMore] = useState(true);
+  const [list, setList] = useState(slice(DATA, 0, LIMIT));
+  const [index, setIndex] = useState(LIMIT);
 
-	useEffect(
-		() => {
-			tag === 'all' ? setFilteredImages(Projects) : setFilteredImages(Projects.filter(x => x.category === tag));
-		},
-		[tag]
-	);
+  const loadMore = () => {
+    const newIndex = index + 3;
+    const newShowMore = newIndex <= DATA.length - 1;
+    const newList = concat(list, slice(DATA, index, newIndex));
+    setIndex(newIndex);
+    setList(newList);
+    setShowMore(newShowMore);
+  };
+  
+  const [activeIndex, setActiveIndex] = useState(0); 
 
-  const TagButton = ({ name, handleSetTag, tagActive }) => {
-	return (
-		<button className={`tag ${tagActive ? 'active' : null}`} onClick={() => handleSetTag(name)}>
-			{name.toUpperCase()}
-		</button>
-	);
-};
+  function handleFilter(e) {
+    let typeFilter = e.target.value;
+      if(typeFilter !== "all"){
+        let filteredFilter = DATA.filter(category => category.type.includes(typeFilter));
+        setList(filteredFilter);
+        setShowMore(false);
+      }else{
+        setList(DATA);
+        setList((slice(DATA, 0, LIMIT)));
+        DATA.length >= 6 ? setShowMore(true) : setShowMore(false);
+      }
+  }
+
+  const handleToggle = (index) => {
+    setActiveIndex(index);
+  };
 
   return (
     <>
@@ -43,14 +60,17 @@ function Project() {
       <div className="projects">
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
-              <TagButton name="all" tagActive={tag === 'all' ? true : false} handleSetTag={setTag} /> 
-              <TagButton name="Social" tagActive={tag === 'Social' ? true : false} handleSetTag={setTag} /> 
-              <TagButton name="Branding" tagActive={tag === 'Branding' ? true : false} handleSetTag={setTag} /> 
-              <TagButton name="Website" tagActive={tag === 'Website' ? true : false} handleSetTag={setTag} /> 
-              <TagButton name="MOBILE" tagActive={tag === 'MOBILE' ? true : false} handleSetTag={setTag} />
-            </div>
-            {filteredImages.map((x, index) => (
+            <div className="col-12 text-center fillter-buttons">
+          {buttons &&
+            buttons.map((x, index, e) => (
+              <>
+                <button key={index} value={x.value} onClick={(e) => {handleToggle(index); handleFilter(e)}} className={activeIndex === index ? "button-item active" : "button-item"}>
+                  {x.name}
+                </button>
+              </>
+            ))}
+          </div>
+            {list.map((x, index) => (
                 <div className="col-lg-4 col-md-6" key={index}>
                   <Link to={`/SingleProject/${x.id}`}>
                     <div className="pro" style={{ backgroundImage: `url(${x.src})` }}>
@@ -62,6 +82,15 @@ function Project() {
                   </Link>
                 </div>
               ))}
+              
+          <div className="col-lg-12 text-center">
+            {showMore && (
+              <button className="more" onClick={loadMore}>
+                {" "}
+                Load More{" "}
+              </button>
+            )}
+          </div>
           </div>
         </div>
       </div>

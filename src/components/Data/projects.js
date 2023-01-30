@@ -24,6 +24,9 @@ export const Projects = [
     name: "Branding & Website",
     src: sa2r_default,
     category: "Website",
+    type : [
+      'Marketing',
+    ] ,
     name1: "Branding",
     name1_ar: "Branding",
     name2: "Website",
@@ -43,7 +46,10 @@ export const Projects = [
     name_ar: "4 خطوات رئيسية لإتقان استراتيجية التسويق الرقمي",
     name: "MOBILE APP",
     src: img1,
-    category: "Branding",
+    type : [
+      'UI',
+      'Marketing'
+    ] ,
     name1: "Branding",
     name1_ar: "Branding",
     name2: "Web Development",
@@ -63,7 +69,10 @@ export const Projects = [
     name_ar: "أهم 8 مبادئ للتسويق الرقمي الناجح",
     name: "Software System",
     src: img2,
-    category: "Social",
+    type : [
+      'App',
+      'Web'
+    ] ,
     name1: "Branding",
     name1_ar: "Branding",
     name2: "Web Development",
@@ -83,7 +92,10 @@ export const Projects = [
     name_ar: "نصائح لاختيار موقع استراتيجي للوحة الإعلانات",
     name: "Landing Page Website",
     src: img3,
-    category: "Website",
+    type : [
+      'App',
+      'Web'
+    ] ,
     name1: "Branding",
     name1_ar: "Branding",
     name2: "Web Development",
@@ -103,7 +115,10 @@ export const Projects = [
     name_ar: "كيفية تنظيم الملفات في وكالة تصميم قبل الطباعة",
     name: "Social Media",
     src: img4,
-    category: "Social",
+    type : [
+      'UI',
+      'Marketing'
+    ] ,
     name1: "Branding",
     name1_ar: "Branding",
     name2: "Web Development",
@@ -123,7 +138,10 @@ export const Projects = [
     name_ar: "كيفية تنظيم الملفات في وكالة تصميم قبل الطباعة",
     name: "Website",
     src: img5,
-    category: "Website",
+    type : [
+      'UI',
+      'Web'
+    ] ,
     name1: "Branding",
     name1_ar: "Branding",
     name2: "Web Development",
@@ -143,7 +161,9 @@ export const Projects = [
     name_ar: "كيفية تنظيم الملفات في وكالة تصميم قبل الطباعة",
     name: "Marketing",
     src: img6,
-    category: "MOBILE",
+    type : [
+      'Marketing',
+    ] ,
     name1: "Branding",
     name1_ar: "Branding",
     name2: "Web Development",
@@ -163,7 +183,9 @@ export const Projects = [
     name_ar: "كيفية تنظيم الملفات في وكالة تصميم قبل الطباعة",
     name: "Branding",
     src: img7,
-    category: "Website",
+    type : [
+      'Marketing'
+    ] ,
     name1: "Branding",
     name1_ar: "Branding",
     name2: "Web Development",
@@ -183,7 +205,10 @@ export const Projects = [
     name_ar: "كيفية تنظيم الملفات في وكالة تصميم قبل الطباعة",
     name: "Branding",
     src: img8,
-    category: "Social",
+    type : [
+      'App',
+      'Web'
+    ] ,
     name1: "Branding",
     name1_ar: "Branding",
     name2: "Web Development",
@@ -203,7 +228,9 @@ export const Projects = [
     name_ar: "كيفية تنظيم الملفات في وكالة تصميم قبل الطباعة",
     name: "Branding",
     src: img9,
-    category: "Branding",
+    type : [
+      'App'
+    ] ,
     name1: "Branding",
     name1_ar: "Branding",
     name2: "Web Development",
@@ -223,7 +250,9 @@ export const Projects = [
     name_ar: "كيفية تنظيم الملفات في وكالة تصميم قبل الطباعة",
     name: "Branding",
     src: img7,
-    category: "MOBILE",
+    type : [
+      'UI',
+    ] ,
     name1: "Branding",
     name1_ar: "Branding",
     name2: "Web Development",
@@ -243,7 +272,9 @@ export const Projects = [
     name_ar: "كيفية تنظيم الملفات في وكالة تصميم قبل الطباعة",
     name: "Branding",
     src: img7,
-    category: "MOBILE",
+    type : [
+      'Marketing'
+    ] ,
     name1: "Branding",
     name1_ar: "Branding",
     name2: "Web Development",
@@ -263,7 +294,10 @@ export const Projects = [
     name_ar: "كيفية تنظيم الملفات في وكالة تصميم قبل الطباعة",
     name: "Branding",
     src: img7,
-    category: "Branding",
+    type : [
+      'UI',
+      'Marketing'
+    ] ,
     name1: "Branding",
     name1_ar: "Branding",
     name2: "Web Development",
@@ -283,7 +317,10 @@ export const Projects = [
     name_ar: "كيفية تنظيم الملفات في وكالة تصميم قبل الطباعة",
     name: "Branding",
     src: img7,
-    category: "Branding",
+    type : [
+      'UI',
+      'Web'
+    ] ,
     name1: "Branding",
     name1_ar: "Branding",
     name2: "Web Development",
@@ -303,7 +340,9 @@ export const Projects = [
     name_ar: "كيفية تنظيم الملفات في وكالة تصميم قبل الطباعة",
     name: "Branding",
     src: img7,
-    category: "Social",
+    type : [
+      'UI',
+    ] ,
     name1: "Branding",
     name1_ar: "Branding",
     name2: "Web Development",
