@@ -77,7 +77,7 @@ function Nav_1(props) {
 
   return (
     <>
-      <header className="navbar en">
+      <header className={`${header} navbar navbar-expand-lg center-nav transparent navbar-dark caret-none en`}>
         <div className="container">
           <div className="nav-top">
             <div className="navbar-brand">
