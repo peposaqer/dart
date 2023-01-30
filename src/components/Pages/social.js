@@ -7,11 +7,11 @@ function Social() {
     return (
         <div className="">
             <a href="#!" className="whatsapp" target="_blank" > 
-                <i class="fa-brands fa-whatsapp"></i>
+                <i className="fa-brands fa-whatsapp"></i>
                 <h1>Send Massage</h1>
             </a>
             <a href="#!" className="messenger" target="_blank">
-                <i class="fa-brands fa-facebook-messenger" ></i>
+                <i className="fa-brands fa-facebook-messenger" ></i>
                 <h1>Send Massage</h1>
             </a>
         </div>

@@ -3,6 +3,9 @@ import { NavLink, Link } from "react-router-dom";
 import Logo from "../img/default-monochrome-white2.svg";
 import { useTranslation } from "react-i18next";
 import "../translations/i18n";
+// import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
 function Nav_1(props) {
   const { t, i18n } = useTranslation();
@@ -64,114 +67,60 @@ function Nav_1(props) {
     detectLang();
   }, []);
 
+    const [show, setShow] = useState(false);
+    const [show1, setShow1] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  const handleClose1 = () => setShow1(false);
+  const handleShow1 = () => setShow1(true);
+
   return (
     <>
-      <header className="wrapper bg-soft-primary en">
-        <nav className={`${header} navbar navbar-expand-lg center-nav transparent navbar-dark caret-none en`}>
-          <div className="container flex-lg-row flex-nowrap align-items-center en">
+      <header className="navbar en">
+        <div className="container">
+          <div className="nav-top">
             <div className="navbar-brand">
-              <Link to="/">
-                <img
-                  className="logo-dark"
-                  src={Logo}
-                  srcSet=""
-                  alt="00"
-                />
-              </Link>
+              <img alt="" src={Logo} className="logo-dark" />
             </div>
-            <div className={`navbar-collapse offcanvas offcanvas-nav offcanvas-start en`}
-              tabIndex="-1" id="offcanvasExample" data-bs-toggle="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-              <div className="offcanvas-header d-lg-none">
-                <h3 className="text-white fs-30 mb-0">
-                  <img
-                    className="logo-dark"
-                    src={Logo}
-                    srcSet=""
-                    alt="00"
-                  />
-                </h3>
-                <i className="fa-solid fa-times close" data-bs-dismiss="offcanvas" aria-label="Close"></i>
-              </div>
-              <div className="offcanvas-body d-flex flex-column h-100 e">
-                <ul className="navbar-nav">
-                  <li className="nav-item">
-                    <NavLink to="/" activeClassName="active" className="nav-link fromRight">
-                      {t("home")}
-                    </NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink to="/About" activeClassName="active" className="nav-link">
-                      {t("about_nav")}
-                    </NavLink>
-                  </li>
-                  <li className="nav-item ">
-                    <NavLink to="/Services" activeClassName="active" className="nav-link">
-                      {t("Services")}
-                    </NavLink>
-                  </li>
-                  <li className="nav-item ">
-                    <NavLink to="/projects" activeClassName="active" className="nav-link">
-                      {t("projects")}
-                    </NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink to="/News" activeClassName="active" className="nav-link">
-                      {t("NEWS_nav")}
-                    </NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink to="/Careers" activeClassName="active" className="nav-link">
-                      {t("Careers")}
-                    </NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink to="/Contact" activeClassName="active" className="nav-link">
-                      {t("contact")}
-                    </NavLink>
-                  </li>
-                </ul>
-                <div className="offcanvas-footer d-lg-none">
-                  <div>
-                    <Link
-                      to="mailto:info@gymmeclub.com"
-                      className="link-inverse"
-                    >
-                      info@gymmeclub.com
-                    </Link>
-                    <br /> 00 (123) 456 78 90 <br />
-                    <nav className="nav social social-white mt-4">
-                      <Link
-                        target="_blank"
-                        to="https://www.twitter.com/gymmeclub"
-                        rel="noreferrer"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </Link>
-                      <Link
-                        target="_blank"
-                        to="https://www.facebook.com/gymmeclub"
-                        rel="noreferrer"
-                      >
-                        <i className="fab fa-facebook-f"></i>
-                      </Link>
-                      <Link
-                        target="_blank"
-                        to="https://www.linkedin.com/company/gymmeclub"
-                        rel="noreferrer"
-                      >
-                        <i className="fab fa-linkedin"></i>
-                      </Link>
-                      <Link
-                        target="_blank"
-                        to="https://www.instagram.com/gymmeclub"
-                        rel="noreferrer"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </Link>
-                    </nav>
-                  </div>
-                </div>
-              </div>
+            <div>
+              <ul className="navbar-nav nav-hide e">
+                <li className="nav-item">
+                  <NavLink to="/" onClick={handleClose} activeClassName="active" className="nav-link fromRight">
+                    {t("home")}
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/About" onClick={handleClose} activeClassName="active" className="nav-link">
+                    {t("about_nav")}
+                  </NavLink>
+                </li>
+                <li className="nav-item ">
+                  <NavLink to="/Services" onClick={handleClose} activeClassName="active" className="nav-link">
+                    {t("Services")}
+                  </NavLink>
+                </li>
+                <li className="nav-item ">
+                  <NavLink to="/projects" onClick={handleClose} activeClassName="active" className="nav-link">
+                    {t("projects")}
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/News" onClick={handleClose} activeClassName="active" className="nav-link">
+                    {t("NEWS_nav")}
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/Careers" onClick={handleClose} activeClassName="active" className="nav-link">
+                    {t("Careers")}
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/Contact" onClick={handleClose} activeClassName="active" className="nav-link">
+                    {t("contact")}
+                  </NavLink>
+                </li>
+              </ul>
             </div>
             <div className="navbar-other d-flex justify-content-end en">
               <ul className="navbar-nav flex-row align-items-center justify-content-end">
@@ -180,7 +129,8 @@ function Nav_1(props) {
                     to ="#!"
                     className="nav-link border-none"
                     data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvas-info"
+                    data-bs-target="#offcanvasRight"
+                    onClick={handleShow1}
                   >
                     <i className="fa fa-circle-info"></i>
                   </Link>
@@ -211,6 +161,7 @@ function Nav_1(props) {
                     data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasExample"
                     aria-controls="offcanvasExample"
+                    onClick={handleShow}
                   >
                     <i className="fa-solid fa-bars-staggered"></i>
                   </button>
@@ -218,28 +169,133 @@ function Nav_1(props) {
               </ul>
             </div>
           </div>
-        </nav>
-        <div className="offcanvas offcanvas-end text-inverse one" id="offcanvas-info" data-bs-scroll="true">
-          <div className="offcanvas-header">
-            <Link to="/">
+        </div>
+
+        <Offcanvas show={show} onHide={handleClose}>
+          <Offcanvas.Header>
+            <Offcanvas.Title>
+              <Link to="/" onClick={handleClose}>
               <img
                 src={Logo}
                 srcSet=""
                 alt=""
               />
             </Link>
-            <i className="fa-solid fa-times close" data-bs-dismiss="offcanvas" aria-label="Close"></i>
-          </div>
-          <div className="offcanvas-body pb-6">
+              <Link to="#!" onClick={handleClose} >
+                <i className="fa-solid fa-times close" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+              </Link>
+            </Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body>
+            <div className="d-flex justify-content-between h-100 flex-column p-3">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <NavLink to="/"  onClick={handleClose} activeClassName="active" className="nav-link fromRight">
+                    {t("home")}
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/About" onClick={handleClose} activeClassName="active" className="nav-link">
+                    {t("about_nav")}
+                  </NavLink>
+                </li>
+                <li className="nav-item ">
+                  <NavLink to="/Services" onClick={handleClose} activeClassName="active" className="nav-link">
+                    {t("Services")}
+                  </NavLink>
+                </li>
+                <li className="nav-item ">
+                  <NavLink to="/projects" onClick={handleClose} activeClassName="active" className="nav-link">
+                    {t("projects")}
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/News" onClick={handleClose} activeClassName="active" className="nav-link">
+                    {t("NEWS_nav")}
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/Careers" onClick={handleClose} activeClassName="active" className="nav-link">
+                    {t("Careers")}
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/Contact" onClick={handleClose} activeClassName="active" className="nav-link">
+                    {t("contact")}
+                  </NavLink>
+                </li>
+              </ul>
+              <div className="offcanvas-footer d-lg-none">
+                <div>
+                  <Link
+                    to="mailto:info@gymmeclub.com"
+                    className="link-inverse"
+                  >
+                    info@gymmeclub.com
+                  </Link>
+                  <br /> 00 (123) 456 78 90 <br />
+                  <nav className="nav social social-white mt-4">
+                    <Link
+                      target="_blank"
+                      to="#!"
+                      rel="noreferrer"
+                    >
+                      <i className="fab fa-twitter"></i>
+                    </Link>
+                    <Link
+                      target="_blank"
+                      to="#!"
+                      rel="noreferrer"
+                    >
+                      <i className="fab fa-facebook-f"></i>
+                    </Link>
+                    <Link
+                      target="_blank"
+                      to="#!"
+                      rel="noreferrer"
+                    >
+                      <i className="fab fa-linkedin"></i>
+                    </Link>
+                    <Link
+                      target="_blank"
+                      to="#!"
+                      rel="noreferrer"
+                    >
+                      <i className="fab fa-instagram"></i>
+                    </Link>
+                  </nav>
+                </div>
+              </div>
+            </div>
+
+          </Offcanvas.Body>
+        </Offcanvas>
+
+        <Offcanvas show={show1} onHide={handleClose1} className="offcanvas offcanvas-end text-inverse one" id="offcanvasRight">
+          <Offcanvas.Header>
+            <Offcanvas.Title>
+              <Link to="/" onClick={handleClose1}>
+              <img
+                src={Logo}
+                srcSet=""
+                alt=""
+              />
+            </Link>
+              <Link to="#!" onClick={handleClose1} >
+                <i className="fa-solid fa-times close" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+              </Link>
+            </Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body>
             <div className="widget mb-8">
               <p>{t("about_description")}</p>
             </div>
             <div className="widget mb-8">
               <h4 className="widget-title text-white mb-3">{t("contact")}</h4>
-              <Link to="mailto:info@gymmeclub.com" className="d-block">
+              <Link to="mailto:info@gymmeclub.com" target="_blank" className="d-block">
                 info@gymmeclub.com
               </Link>
-              <Link to="mailto:support@gymmeclub.com" className="d-block">
+              <Link to="mailto:support@gymmeclub.com" target="_blank" className="d-block">
                 support@gymmeclub.com
               </Link>
             </div>
@@ -247,19 +303,19 @@ function Nav_1(props) {
               <h4 className="widget-title text-white mb-3">{t("Links")}</h4>
               <ul className="list-unstyled">
                 <li>
-                  <Link to="/">{t("Home")}</Link>
+                  <Link to="/" onClick={handleClose1}>{t("Home")}</Link>
                 </li>
                 <li>
-                  <Link to="/About">{t("about_nav")}</Link>
+                  <Link to="/About" onClick={handleClose1}>{t("about_nav")}</Link>
                 </li>
                 <li>
-                  <Link to="/FAQ">{t("FAQ")}</Link>
+                  <Link to="/FAQ" onClick={handleClose1}>{t("FAQ")}</Link>
                 </li>
                 <li>
-                  <Link to="/Privacy">{t("Privacy")}</Link>
+                  <Link to="/Privacy" onClick={handleClose1}>{t("Privacy")}</Link>
                 </li>
                 <li>
-                  <Link to="/Terms">{t("terms")}</Link>
+                  <Link to="/Terms" onClick={handleClose1}>{t("terms")}</Link>
                 </li>
               </ul>
             </div>
@@ -268,36 +324,38 @@ function Nav_1(props) {
               <nav className="nav social social-white">
                 <Link
                   target="_blank"
-                  to="https://www.twitter.com/gymmeclub"
+                  to="#!"
                   rel="noreferrer"
                 >
                   <i className="fab fa-twitter"></i>
                 </Link>
                 <Link
                   target="_blank"
-                  to="https://www.facebook.com/gymmeclub"
+                  to="#!"
                   rel="noreferrer"
                 >
                   <i className="fab fa-facebook-f"></i>
                 </Link>
                 <Link 
                   target="_blank"
-                  to="https://www.linkedin.com/company/gymmeclub"
+                  to="#!"
                   rel="noreferrer"
                 >
                   <i className="fab fa-linkedin"></i>
                 </Link>
                 <Link
                   target="_blank"
-                  to="https://www.instagram.com/gymmeclub"
+                  to="#!"
                   rel="noreferrer"
                 >
                   <i className="fab fa-instagram"></i>
                 </Link>
               </nav>
             </div>
-          </div>
-        </div>
+
+          </Offcanvas.Body>
+        </Offcanvas>
+
       </header>
     </>
   );

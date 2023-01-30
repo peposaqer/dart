@@ -5,38 +5,12 @@ $tagsColor: #C69749;
 
 .navbar {
     background-color: transparent;
-    // box-shadow: 0px 0px 19px $myColor;
     .logo-dark {
         width: 200px;
         height: 80px;
     }
-    .nav-link {
-        color: $tagsColor !important;
-        font-size: 18px;
-        margin: 0rem 1rem !important;
-        white-space: nowrap;
-        font-weight: bold;
-        transition: all .3s;
-        display:inline-block;
-        &.border-none:hover:after  {
-            transform: scaleX(0);
-        }
-        &:after {
-            border-bottom: 3px solid $tagsColor;
-            transition: all .3s;
-            display:block;
-            content: '';
-            transform: scaleX(0);  
-            transition: transform 250ms ease-in-out;
-        }
-        &:hover:after {
-            transform: scaleX(1);
-        }
-        &.active:after {
-            transform: scaleX(1);
-            transition: all .3s;
-            border-bottom: 3px solid #FFF;
-        }
+    .navbar-nav {
+        flex-flow: row;
     }
 }
 .fa-circle-info {
@@ -46,11 +20,47 @@ $tagsColor: #C69749;
     }
 }
 
+.nav-link {
+    color: $tagsColor !important;
+    font-size: 18px;
+    margin: 0rem 1rem !important;
+    white-space: nowrap;
+    font-weight: bold;
+    transition: all .3s;
+    display:inline-block;
+    &.border-none:hover:after  {
+        transform: scaleX(0);
+    }
+    &:after {
+        border-bottom: 3px solid $tagsColor;
+        transition: all .3s;
+        display:block;
+        content: '';
+        transform: scaleX(0);  
+        transition: transform 250ms ease-in-out;
+    }
+    &:hover:after {
+        transform: scaleX(1);
+    }
+    &.active:after {
+        transform: scaleX(1);
+        transition: all .3s;
+        border-bottom: 3px solid #FFF;
+    }
+    &.active {
+        color: #FFF !important;
+    }
+}
+
 .offcanvas-header {
     img {
         width: 200px;
         height: 40px;
     }
+}
+
+.social {
+
 }
 
 .language-select {
@@ -105,10 +115,10 @@ $tagsColor: #C69749;
 
 .offcanvas {
     background-color: #282A3A;
-    // z-index: 10;
+    z-index: 99999;
     // position: relative;
     img {
-        width: 100%;
+        // width: 100%;
         margin-top: 1rem;
     }
     p {
@@ -186,15 +196,48 @@ $tagsColor: #C69749;
     }
 }
 
-@media screen and (max-width: 1205px) {
-    .e {
-        margin-top: 5rem;
+#offcanvasRight {
+    left: unset !important;
+}
+
+.offcanvas-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.btn-close {
+    color: #FFF !important;
+}
+
+@media screen and (max-width: 1105px) {
+    .nav-top {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        flex-flow: column;
     }
 }
 
 @media screen and (max-width: 991px) {
-    .e {
-        margin-top: 0rem;
+    .nav-hide {
+        display: none !important;
+    }
+    .nav-top {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        flex-flow: row;
     }
 }
 
@@ -209,5 +252,8 @@ $tagsColor: #C69749;
     .offcanvas {
         width: 100% !important;
         overflow-x: hidden;
+    }
+    .e {
+        margin-top: 0rem;
     }
 }
