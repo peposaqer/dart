@@ -4,12 +4,17 @@ import img2 from "../img/P2UGM57-150x150.jpg"
 import img3 from "../img/E3CC8GB-150x150.jpg"
 import img4 from "../img/2CUG9YD-150x150.jpg"
 import img5 from "../img/2CUG9YD-150x150.jpg"
+import BrandingImg1 from "../img/branding-identity-design-services-250x250.webp"
+import BrandingImg2 from "../img/62deb5c7c55ac3035e9bdff904f3796d.jpg"
+import BrandingImg3 from "../img/2e00b165fc4d5559f08f1bd713c8065c.jpg"
+import BrandingImg4 from "../img/branding-visual-identity-logo-designs-8-1.jpg"
+import BrandingImg5 from "../img/d07a63c7e0f643ca935a5f10fbd20195.jpg"
 
 const Service = [
   {
     id: 1,
     span: "Business Solution",
-    span_ar: "مشاريع ناجحة",
+    span_ar: "حل الأعمال",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-lightbulb",
@@ -20,22 +25,40 @@ const Service = [
     src4: img5,
   },
   {
-    id: 2,
-    span: "Social Branding",
-    span_ar: "سنوات خبرة",
+    id: 13,
+    span: "Building a website",
+    span_ar: "بناء ويب سايت",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: "fa-solid fa-bars-progress"
+  },
+  {
+    id: 11,
+    span: "Content writer",
+    span_ar: "كاتب محتوي",
+    name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
+    name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: "fa-solid fa-lightbulb"
+  },
+  {
+    id: 2,
+    span: "Branding",
+    span_ar: "العلامة التجارية",
+    name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: BrandingImg1,
+    name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-chalkboard-user",
-    src1: img2,
-    src2: img3,
-    src3: img4,
-    src4: img5,
+    src1: BrandingImg2,
+    src2: BrandingImg3,
+    src3: BrandingImg4,
+    src4: BrandingImg5,
   },
   {
     id: 3,
     span: "Marketing Strategy",
-    span_ar: "الفوز بجوائز",
+    span_ar: "استراتيجية التسويق",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -46,9 +69,22 @@ const Service = [
     src4: img5,
   },
   {
+    id: 6,
+    span: "Graphic Design",
+    span_ar: "جرافيك ديزين",
+    name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    src: img,
+    name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: "fa-solid fa-lightbulb",
+    src1: img2,
+    src2: img3,
+    src3: img4,
+    src4: img5,
+  },
+  {
     id: 4,
     span: "Business Planning",
-    span_ar: "عملاء راضون",
+    span_ar: "تخطيط الأعمال",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -61,7 +97,7 @@ const Service = [
   {
     id: 5,
     span: "Risk Management",
-    span_ar: "عملاء راضون",
+    span_ar: "إدارة المخاطر",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -72,22 +108,9 @@ const Service = [
     src4: img5,
   },
   {
-    id: 6,
-    span: "Business Solution",
-    span_ar: "مشاريع ناجحة",
-    name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    src: img,
-    name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    icon: "fa-solid fa-lightbulb",
-    src1: img2,
-    src2: img3,
-    src3: img4,
-    src4: img5,
-  },
-  {
     id: 7,
-    span: "Social Branding",
-    span_ar: "سنوات خبرة",
+    span: "Logos design",
+    span_ar: "تصميم لوجوهات",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -99,8 +122,8 @@ const Service = [
   },
   {
     id: 8,
-    span: "Marketing Strategy",
-    span_ar: "الفوز بجوائز",
+    span: "Advertisement photography",
+    span_ar: "تصوير اعلانات",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -112,8 +135,8 @@ const Service = [
   },
   {
     id: 9,
-    span: "Business Planning",
-    span_ar: "عملاء راضون",
+    span: "Output vision",
+    span_ar: "رؤيه اخراجيه",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -125,8 +148,8 @@ const Service = [
   },
   {
     id: 10,
-    span: "Risk Management",
-    span_ar: "عملاء راضون",
+    span: "Produced",
+    span_ar: "مونتاج",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -137,36 +160,18 @@ const Service = [
     src4: img5,
   },
   {
-    id: 11,
-    span: "Business Solution",
-    span_ar: "مشاريع ناجحة",
-    name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    src: img,
-    name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    icon: "fa-solid fa-lightbulb"
-  },
-  {
     id: 12,
-    span: "Social Branding",
-    span_ar: "سنوات خبرة",
+    span: "Typography",
+    span_ar: "طباعه",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "fa-solid fa-chalkboard-user"
   },
   {
-    id: 13,
-    span: "Marketing Strategy",
-    span_ar: "الفوز بجوائز",
-    name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    src: img,
-    name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    icon: "fa-solid fa-bars-progress"
-  },
-  {
     id: 14,
-    span: "Business Planning",
-    span_ar: "عملاء راضون",
+    span: "Building a mobile application",
+    span_ar: "بناء موبايل ابلكشين",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -174,53 +179,8 @@ const Service = [
   },
   {
     id: 15,
-    span: "Risk Management",
-    span_ar: "عملاء راضون",
-    name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    src: img,
-    name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    icon: "fa-solid fa-bars-progress"
-  },
-  {
-    id: 16,
-    span: "Business Solution",
-    span_ar: "مشاريع ناجحة",
-    name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    src: img,
-    name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    icon: "fa-solid fa-lightbulb"
-  },
-  {
-    id: 17,
-    span: "Social Branding",
-    span_ar: "سنوات خبرة",
-    name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    src: img,
-    name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    icon: "fa-solid fa-chalkboard-user"
-  },
-  {
-    id: 18,
-    span: "Marketing Strategy",
-    span_ar: "الفوز بجوائز",
-    name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    src: img,
-    name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    icon: "fa-solid fa-bars-progress"
-  },
-  {
-    id: 19,
-    span: "Business Planning",
-    span_ar: "عملاء راضون",
-    name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    src: img,
-    name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    icon: "fa-solid fa-chalkboard-user"
-  },
-  {
-    id: 20,
-    span: "Risk Management",
-    span_ar: "عملاء راضون",
+    span: "Sales representatives",
+    span_ar: "مندوبين مبيعات",
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     src: img,
     name_ar: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",

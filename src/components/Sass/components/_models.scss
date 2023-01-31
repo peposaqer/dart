@@ -3,7 +3,7 @@
     width: 80%;
     height: 80%;
     position: fixed;
-    top: 10%;
+    top: 17%;
     left: 10%;
     display: flex;
     justify-content: center;
@@ -39,6 +39,7 @@
                 width: 80%;
                 height: 400px;
                 background-size: contain;
+                object-fit: none;
             }
         }
     }
