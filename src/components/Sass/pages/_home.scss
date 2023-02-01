@@ -335,7 +335,7 @@ $mainSize: 18px;
             flex-flow: column;
             border: 1px solid #c69649cc;
             display: none;
-            transition: all .3s;
+            transition: .3s ease-in-out;
             h1 {
                 font-size: 65px;
                 color: #FFF;
@@ -348,11 +348,11 @@ $mainSize: 18px;
         &:hover {
             bottom: 1rem;
             position: relative;
-            transition: all .3s;
-            scale: 1.0999;
+            transition: .3s ease-in-out;
+            transform: scale(1.1);
             div {
                 display: flex !important;
-                transition: all .3s;
+            transition: .3s ease-in-out;
             }
         }
     }

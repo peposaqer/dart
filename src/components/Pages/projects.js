@@ -65,7 +65,9 @@ const [showMore, setShowMore] = useState(true);
             buttons.map((x, index, e) => (
               <>
                 <button key={index} value={x.value} onClick={(e) => {handleToggle(index); handleFilter(e)}} className={activeIndex === index ? "button-item active" : "button-item"}>
-                  {x.name}
+                  {i18n.language === "en"
+                          ? x.name
+                          : x.name_ar}
                 </button>
               </>
             ))}
