@@ -108,7 +108,7 @@ function Home() {
                   <p className="about_description">{t("about_description")}</p>
                   <div className="about-img">
                     <img src={aboutimg1} alt="" />
-                    <div className="red"><span>3+ <br/><strong className="about_Experience">{t("about_Experience")}</strong></span></div>
+                    {/* <div className="red"><span>3+ <br/><strong className="about_Experience">{t("about_Experience")}</strong></span></div> */}
                   </div>
                 </div>
               </div>
@@ -134,7 +134,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="we en">
+          {/* <div className="we en">
             <div className="row">
               <div className="col-md-6">
                 <div className="tec">
@@ -159,7 +159,7 @@ function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="services en">

@@ -139,5 +139,13 @@ export const TRANSLATIONS_en = {
   review: "GIVE A REVIEW",
   review_header: "Leave A Message",
   review_des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a feugiat purus. Duis turpis nunc aliquam.",
+  build: "WE BUILD",
+  build_1: "BRANDS",
+  build_2: "TO CONNECT",
+  build3: "WITH PEOPLE",
+  build_des: "Our process applies techniques from a variety of disciplines, values distinction in detail and gives careful consideration to the unique needs and qualities of each client.",
+  build_des_1: "Our team operates with the philosophy that any project is a cross-disciplined process.",
+  Design: "Design",
+  Design: "Design",
   Design: "Design",
 };

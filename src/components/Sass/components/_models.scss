@@ -29,6 +29,7 @@
     }
     .swiper {
         margin-top: 5rem;
+        overflow: hidden;
         height: 50%;
         position: relative;
         .swiper-slide {
@@ -36,10 +37,10 @@
             background-size: cover;
             text-align: center;
             img {
-                width: 80%;
+                width: 50%;
                 height: 400px;
-                background-size: contain;
-                object-fit: none;
+                background-size: cover;
+                background-position: center;
             }
         }
     }

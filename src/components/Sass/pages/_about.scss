@@ -239,6 +239,36 @@ $mainSize: 18px;
     }
 }
 
+.brands {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+        span {
+            // font-size: 22px;
+            font-weight: bolder;
+            margin-left: .6rem;
+            margin-right: .6rem;
+            color: $headerColor;
+            letter-spacing: 5px;
+        }
+        h1 {
+            color: #FFF;
+            font-size: 36px;
+            margin-top: 1.2rem;
+            margin-bottom: 1.2rem;
+        }
+        p {
+            font-size: $mainSize;
+            color: #8C8E90;
+            margin-bottom: 1.5rem;
+            width: 60%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+        }
+}
 
 
 

@@ -18,5 +18,25 @@ export const buttons = [
 {
     name: "App Development",
     value: "App"
+},
+{
+    name: "Branding",
+    value: "Branding"
+},
+{
+    name: "Content writer",
+    value: "writer"
+},
+{
+    name: "Advertisement photography",
+    value: "photography"
+},
+{
+    name: "Typography",
+    value: "Typography"
+},
+{
+    name: "Produced",
+    value: "Produced"
 }
 ];

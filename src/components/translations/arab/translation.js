@@ -140,4 +140,10 @@ export const TRANSLATIONS_ar = {
   review: "قدم مراجعة",
   review_header: "اترك رسالة",
   review_des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a feugiat purus. Duis turpis nunc aliquam.",
+  build: "نحن نبني",
+  build_1: "العلامات التجارية",
+  build_2: "للاتصال",
+  build3: "مع الناس",
+  build_des: "تطبق عمليتنا تقنيات من مجموعة متنوعة من التخصصات ، وتميز القيم بالتفصيل وتولي اهتمامًا دقيقًا للاحتياجات والصفات الفريدة لكل عميل.",
+  build_des_1: "يعمل فريقنا بفلسفة مفادها أن أي مشروع هو عملية متعددة التخصصات.",
 };

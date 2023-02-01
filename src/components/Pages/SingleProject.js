@@ -39,12 +39,12 @@ function SingleProject() {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h2>{x.name}</h2>
+                            {/* <h2>{x.name}</h2> */}
                             <h2>{x.name1}</h2>
                             <h2>{x.name2}</h2>
                             <p>{x.short_des}</p>
                         </div>
-                        <div className="col-md-12 mb-3">
+                        {/* <div className="col-md-12 mb-3">
                             <img alt="" src={x.src1} />
                         </div>
                         <div className="col-md-6 mb-3">
@@ -52,7 +52,7 @@ function SingleProject() {
                         </div>
                         <div className="col-md-6 mb-3">
                             <img alt="" src={x.src3} />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

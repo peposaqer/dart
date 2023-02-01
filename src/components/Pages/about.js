@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "../translations/i18n";
 import img from "../img/image-1-copyright-px6a5xgg15hpb2249d23r0djx4yww6xnxda65bufx0.jpg"
+import img1 from "../img/pasted image 0.jpg"
 
 function About() {
   const { t } = useTranslation();
@@ -52,6 +53,22 @@ function About() {
               </div>
               <p>{t("smart_des")}</p>
               <Link to="/Services" className="read">{t("READ")}</Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="brands en">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div>
+                <h1>{t("build")}<span>{t("build_1")}</span>{t("build_2")}<span>{t("build3")}</span></h1>
+                <p>{t("build_des")}</p>
+                <p>{t("build_des_1")}</p>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <img src={img1} alt="" />
             </div>
           </div>
         </div>
