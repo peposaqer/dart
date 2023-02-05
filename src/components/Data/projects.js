@@ -232,7 +232,7 @@ export const Projects = [
   {
     id: 9,
     selected: false,
-    step: "How ",
+    step: "Untitled",
     name_ar: "كيفية تنظيم الملفات في وكالة تصميم قبل الطباعة",
     name: "Branding",
     src: unit4,
