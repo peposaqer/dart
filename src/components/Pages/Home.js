@@ -216,7 +216,7 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* <div className="testimonial">
+      <div className="testimonial">
         <div className="container">
           <div className="our">
             <div>
@@ -279,7 +279,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       <div className="projects">
         <div className="container">
           <div className="row">

@@ -15,7 +15,7 @@ function SingleProject() {
     return (
         <>
             <div className="single">
-                <img src={x.src} alt="" />
+                <img src={x.src1} alt="" />
             </div>
             <div className="art">
                 <div className="container">
@@ -35,7 +35,7 @@ function SingleProject() {
                     </div>
                 </div>
             </div>
-            <div className="web">
+            <div className="web mb-5">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
@@ -46,13 +46,13 @@ function SingleProject() {
                         </div>
                         {/* <div className="col-md-12 mb-3">
                             <img alt="" src={x.src1} />
-                        </div>
-                        <div className="col-md-6 mb-3">
+                        </div> */}
+                        <div className="col-md-6 mb-5">
                             <img alt="" src={x.src2} />
                         </div>
-                        <div className="col-md-6 mb-3">
+                        <div className="col-md-6 mb-5">
                             <img alt="" src={x.src3} />
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </div>

@@ -324,7 +324,9 @@ $mainSize: 18px;
         width: 100%;
         margin-bottom: 2rem;
         padding: 1rem;
-        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
         transition: all .3s;
         div {
             background-color: #c69649e5;
