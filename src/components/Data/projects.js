@@ -127,7 +127,7 @@ export const Projects = [
       'Branding',
       'Typography',
     ] ,
-    name1: "Branding",
+    name1: "Branding & Typography",
     name1_ar: "Branding",
     name2: "Design & UI/UX",
     name2_ar: "Design & UI/UX",
