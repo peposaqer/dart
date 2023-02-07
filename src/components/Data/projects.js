@@ -91,7 +91,7 @@ export const Projects = [
     src3: afak4,
     des: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
     des_ar: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-    link: "#!",
+    link: "/contact",
     logo: afak2
   },
   {
@@ -113,7 +113,7 @@ export const Projects = [
     src3: super2,
     des: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
     des_ar: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-    link: "/projects",
+    link: "/contact",
     logo: super3
   },
   {
@@ -137,7 +137,7 @@ export const Projects = [
     src3: art2,
     des: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
     des_ar: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-    link: "https://www.arctic.de/",
+    link: "/contact",
     logo: art4
   },
   {
@@ -159,7 +159,7 @@ export const Projects = [
     src3: cat4,
     des: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
     des_ar: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-    link: "#!",
+    link: "/contact",
     logo: cat3
   },
   {
@@ -182,7 +182,7 @@ export const Projects = [
     src3: kulo1,
     des: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
     des_ar: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-    link: "https://afakegypt.com/site/",
+    link: "/contact",
     logo: kulo
   },
   {
@@ -227,7 +227,7 @@ export const Projects = [
     src3: teen3,
     des: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
     des_ar: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-    link: "#!",
+    link: "/contact",
     logo: teen2
   },
   {
@@ -252,7 +252,7 @@ export const Projects = [
     src3: unit3,
     des: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
     des_ar: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-    link: "https://www.untitledcoffee.com/",
+    link: "/contact",
     logo: unit4
   },
   {
@@ -274,7 +274,7 @@ export const Projects = [
     src3: view2,
     des: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
     des_ar: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-    link: "#!",
+    link: "/contact",
     logo: view1
   },
   {
