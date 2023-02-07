@@ -44,6 +44,7 @@ import unit4 from "../img/unit4.png"
 import view1 from "../img/view1.png"
 import view2 from "../img/view2.png"
 import view3 from "../img/evaluation.png"
+import balirin from "../img/balirin.jpeg"
 
 export const Projects = [
   {
@@ -112,7 +113,7 @@ export const Projects = [
     src3: super2,
     des: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
     des_ar: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-    link: "#!",
+    link: "/projects",
     logo: super3
   },
   {
@@ -136,13 +137,13 @@ export const Projects = [
     src3: art2,
     des: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
     des_ar: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-    link: "#!",
+    link: "https://www.arctic.de/",
     logo: art4
   },
   {
     id: 5,
     selected: true,
-    step: "Smeily Cat",
+    step: "Smelly Cat",
     name_ar: "كيفية تنظيم الملفات في وكالة تصميم قبل الطباعة",
     name: "Logo Design",
     src: cat1,
@@ -181,7 +182,7 @@ export const Projects = [
     src3: kulo1,
     des: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
     des_ar: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-    link: "#!",
+    link: "https://afakegypt.com/site/",
     logo: kulo
   },
   {
@@ -192,7 +193,7 @@ export const Projects = [
     name: "INSTAGRAM POST & Logo Design",
     src: lry4,
     type : [
-      'Marketing',
+      'Marketing & Social Media',
       'UI',
     ] ,
     name1: "Marketing",
@@ -204,7 +205,7 @@ export const Projects = [
     src3: lry1,
     des: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
     des_ar: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-    link: "#!",
+    link: "https://www.instagram.com/71lyrics/",
     logo: lry4
   },
   {
@@ -251,7 +252,7 @@ export const Projects = [
     src3: unit3,
     des: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
     des_ar: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-    link: "#!",
+    link: "https://www.untitledcoffee.com/",
     logo: unit4
   },
   {
@@ -279,24 +280,25 @@ export const Projects = [
   {
     id: 11,
     selected: false,
-    step: "How ",
+    step: "Balirin",
     name_ar: "كيفية تنظيم الملفات في وكالة تصميم قبل الطباعة",
-    name: "Branding",
-    src: img7,
+    name: "Logo Design",
+    src: balirin,
     type : [
       'UI',
+      'Marketing & Social Media'
     ] ,
-    name1: "Branding",
-    name1_ar: "Branding",
-    name2: "Web Development",
-    name2_ar: "Web Development",
-    src1: img,
-    src2: img,
-    src3: img,
+    name1: "Logo Design",
+    name1_ar: "",
+    name2: "",
+    name2_ar: "",
+    src1: balirin,
+    src2: balirin,
+    src3: balirin,
     des: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
     des_ar: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-    link: "#!",
-    logo: logo1
+    link: "https://www.instagram.com/balirina._/?igshid=YmMyMTA2M2Y%3D",
+    logo: balirin
   },
   {
     id: 12,
